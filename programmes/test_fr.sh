@@ -25,7 +25,7 @@ echo "<html>
 echo "</head>
 <body>
 <table>
-<tr><th>Ligne</th><th>URL</th><th>Code</th><th>Encodage</th></tr>" >> $chemin
+<tr><th>Ligne</th><th>URL</th><th>Code HTTP</th><th>Encodage</th></tr>" >> $chemin
 
 fichier_urls=$1
 ligne=0
@@ -37,7 +37,7 @@ do
     charset=$(curl -s -I -L -w  "%{content_type}" -o /dev/null $line ｜ ggrep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
     ###################################################################我的mac`grep -P`行不通的，至于为什么此处结果正确，因为删掉`-P`也可以
     echo "<tr>
-    <th>$ligne</th><th>$line</th><th>$code</th><th>$charset</th>
+    <td>$ligne</td><td>$line</td><td>$code</td><td>$charset</td>
     </tr>" >> $chemin
 
 done < $fichier_urls
