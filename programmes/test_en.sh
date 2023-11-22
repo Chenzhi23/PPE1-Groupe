@@ -31,8 +31,9 @@ while read -r line;
 do
 	if [ -n "$line" ];
 	then
-		code=$(curl -I -L -s -w "%{http_code}" -o /dev/null $line | grep -v "^$")
-		charset=$(curl -I -s -w "%{content_type}" -o /dev/null $line | grep -v "^$" | grep -P -o "charset=\S+" | cut -d "=" -f2)
+		lang=$(basename $URLS .txt)
+		code=$(curl -I -L -s -w "%{http_code}" -o /dev/null $line)
+		charset=$(curl -I -s -w "%{content_type}" -o /dev/null $line | grep -P -o "charset=\S+" | cut -d "=" -f2)
 		echo -e "\t\t\t<tr><td>$counter</td><td>$line</td><td>$code</td><td>$charset</td></tr>" >> table_anglais.html
 		counter=$(expr $counter + 1)
 	fi
