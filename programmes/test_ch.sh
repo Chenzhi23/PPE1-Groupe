@@ -18,7 +18,7 @@ echo "<html>
  <head><title>Tableau</title><meta charset="UTF-8" /></head>
  <body>
  <table border='1'>
- <tr><th>N°</th><th>URL</th><th>http_code</th><th>encoding</th></tr>" > tableau_chinois.html
+ <tr><th>N°</th><th>URL</th><th>http_code</th><th>encoding</th></tr>" > tableau-chinois.html
 
 N=1
 
@@ -33,7 +33,7 @@ do
         encoding="N/A"
     fi
 
-    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td></tr>" >> tableau_chinois.html
+    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td></tr>" >> tableau-chinois.html
 
     N=$(expr $N + 1)
 
