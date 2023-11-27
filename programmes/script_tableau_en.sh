@@ -10,7 +10,7 @@ echo "<html>
 	</head>
 	<body>
 		<table border="black solid">
-			<tr><th>numéro_url</th><th>url</th><th>status_code</th><th>charset</th><th>compte</th>" > ../tableaux/tableau-en.html
+			<tr><th>numéro d'url</th><th>url</th><th>code de status</th><th>charset</th><th>compte</th><th>lien d'aspiration</th><th>lien des dumps</th><th>lien de contexte</th></tr>" > ../tableaux/tableau-en.html
 
 
 while read -r line;
@@ -22,7 +22,7 @@ do
 		code=$(curl -I -L -s -w "%{http_code}" -o /dev/null $line)
 		charset=$(curl -I -s -w "%{content_type}" -o /dev/null $line | grep -P -o "charset=\S+" | cut -d "=" -f2)
 		# aspirations
-		curl $line > ../aspirations/fich-$lang-$counter.html
+		curl -L $line > ../aspirations/fich-$lang-$counter.html
 		# dump text
 		lynx --dump --nolist $line > ../dumps-text/fich-$lang-$counter.txt
 		# occurence de mot étudié
@@ -30,7 +30,7 @@ do
 		# récupérer les contextes
 		lynx --nolist --dump $line | grep -i -B 1 -A 1 "transgender" > ../contextes/fich-$lang-$counter.txt
 		# remplie le tableau
-		echo -e "\t\t\t<tr><td>$counter</td><td>$line</td><td>$code</td><td>$charset</td><td>$occurence</td></tr>" >> ../tableaux/tableau-en.html
+		echo -e "\t\t\t<tr><td>$counter</td><td>$line</td><td>$code</td><td>$charset</td><td>$occurence</td><td><a href="../aspirations/fich-$lang-$counter.html">aspiration-$lang-$counter</a></td><td><a href="../dumps-text/fich-$lang-$counter.txt">dump-$lang-$counter</a></td><td><a href="../contextes/fich-$lang-$counter.txt">contexte-$lang-$counter</a></td></tr>" >> ../tableaux/tableau-en.html
 		counter=$(expr $counter + 1)
 	fi
 done < $urlfile
