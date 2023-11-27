@@ -1,0 +1,469 @@
+   #alternate
+
+     * Aller au menu
+     * Aller à la recherche
+     * Aller au contenu
+
+Header Liens à gauche
+
+   Show -- Header Liens à gauche Hide -- Header Liens à gauche
+     * Vos services
+     * Les Crous
+
+   (BUTTON) Afficher plus
+     * Jobs
+     * Logement privé Jobs
+     * Logements Crous Logement privé Jobs
+     * Mon garant Logements Crous Logement privé Jobs
+     * CVEC Mon garant Logements Crous Logement privé Jobs
+     * Quel master ? CVEC Mon garant Logements Crous Logement privé Jobs
+     * Entrepreneuriat Quel master ? CVEC Mon garant Logements Crous
+       Logement privé Jobs
+     * Courts séjours Entrepreneuriat Quel master ? CVEC Mon garant
+       Logements Crous Logement privé Jobs
+     * Izly - Payer sur le campus Courts séjours Entrepreneuriat Quel
+       master ? CVEC Mon garant Logements Crous Logement privé Jobs
+     * Assistance Izly - Payer sur le campus Courts séjours
+       Entrepreneuriat Quel master ? CVEC Mon garant Logements Crous
+       Logement privé Jobs
+
+Header liens au centre
+
+     * Étudiants internationaux
+     * Étudiants réfugiés
+
+   Accessibilité téléphonique
+   Nous suivre sur Twitter Nous suivre sur Facebook Nous suivre sur
+   Instagram
+   Retour à l'accueil | etudiant.gouv.fr Retour à la page d'accueil
+   Retour à l'accueil | etudiant.gouv.fr
+   Retour à l'accueil | etudiant.gouv.fr Retour à la page d'accueil
+   Retour à l'accueil | etudiant.gouv.fr
+   Votre vie étudiante au quotidien
+
+(BUTTON) Vos aides financières
+
+     * Bourses sur critères sociaux
+     * Aides spécifiques (annuelle ou d'urgence)
+     * Aide au mérite
+     * Aides des régions et des Outre-mer
+     * Bourses Erasmus+ et Aide à la mobilité internationale
+     * Autres aides pour étudier à l'étranger
+     * Aide à la mobilité Parcoursup
+     * Aide à la mobilité en master
+     * Prêt étudiant garanti par l'État
+     * Financement doctoral
+     * Aides pour les étudiants internationaux
+     * Aides au logement
+     * Transports en commun : les réductions
+     * Financement du permis de conduire
+     * Aides pour une complémentaire santé
+     * GIVEKA (handicap, accident, maladie)
+     * Aides aux projets culturels et artistiques
+     * La culture gratuite ou à petit prix
+     * Le Pass'Sport et les étudiants
+     * Départ 18:25 - Vacances à prix réduit
+     * 1 bus pour 1 campus - Vacances sportives
+     * Aides pour les situations de handicap
+     * Aides pour les alternants
+     * Autres bourses et soutiens financiers
+
+   Accéder à la rubrique
+
+(BUTTON) Vous loger
+
+     * Vous loger en résidence universitaire
+     * Logement pour les étudiants internationaux
+     * Vous loger hors résidence universitaire
+     * Logement : conseils, droits
+     * Aides au logement et à la caution locative
+
+   Accéder à la rubrique
+
+(BUTTON) Vous restaurer
+
+     * Crous Resto'
+     * Le repas Crous à 1 EUR
+     * Où trouver les Resto'U ?
+     * Izly, votre solution de paiement
+     * Comment bien manger ?
+     * Sélection d'applis antigaspi
+     * Alimentation : AMAP et ventes directes
+
+   Accéder à la rubrique
+
+(BUTTON) Votre santé
+
+     * La couverture santé
+     * La santé sur les campus
+     * Complémentaire santé / Mutuelles
+     * Choisir un médecin traitant
+     * Besoin d'une aide psychologique ?
+     * Suicide : en parler et être écouté
+     * Questions de sexualités
+     * VIH / SIDA : des pistes pour le dépistage
+     * Addictions : les aides et infos utiles
+
+   Accéder à la rubrique
+
+(BUTTON) Vos études
+
+     * Parcoursup, CVEC, inscription
+     * Formations, stages, césure
+     * Orientation et insertion professionnelle
+     * Mobilité internationale : Erasmus+, volontariats, venir en France
+     * Après la licence / Master
+     * S'engager pendant ses études
+     * Statuts spécifiques
+
+   Accéder à la rubrique
+
+(BUTTON) Votre emploi / entrepreneuriat
+
+     * Jobs étudiants, contrats...
+     * Entrepreneuriat étudiant
+
+   Accéder à la rubrique
+
+(BUTTON) Vous bouger et vous cultiver
+
+     * Culture et pratiques artistiques
+     * Concours de création étudiante
+     * Sport dans l'enseignement supérieur
+     * Service Civique, volontariats, bénévolat
+     * Vie associative / Les assos étudiantes
+     * L'Europe et vous : droits et dispositifs
+     * Écouter Radio Campus
+     * Loisirs et vacances
+
+   Accéder à la rubrique
+
+(BUTTON) Vous conseiller et accompagner
+
+     * Étudiants en situation de handicap
+     * Étudiants des Outre-mer
+     * Étudiants internationaux
+     * Étudiants réfugiés
+     * CIDJ et réseau Info Jeunesse
+     * Lutte contre les discriminations
+     * Organiser une soirée étudiante, un WEI
+     * Violences LGBTphobes
+     * Violences sexistes et sexuelles
+
+   Accéder à la rubrique
+
+(BUTTON) Vos questions, nos réponses | FAQ
+
+     * FAQ | DSE : bourse sur critères sociaux et logement Crous
+     * FAQ | CVEC
+     * FAQ | Stages
+     * FAQ | Césure
+
+   Accéder à la rubrique
+
+(BUTTON) Recherche
+
+   Recherche ______________________________
+   Voir les résultats
+
+(BUTTON) Info
+
+Header Liens à gauche mobile
+
+   Show -- Header Liens à gauche mobile Hide -- Header Liens à gauche
+   mobile
+     * Vos services
+     * Les Crous
+     * Jobs Les Crous
+     * Logement privé Jobs Les Crous
+     * Logements Crous Logement privé Jobs Les Crous
+     * Mon garant Logements Crous Logement privé Jobs Les Crous
+     * CVEC Mon garant Logements Crous Logement privé Jobs Les Crous
+     * Quel master ? CVEC Mon garant Logements Crous Logement privé Jobs
+       Les Crous
+     * Entrepreneuriat Quel master ? CVEC Mon garant Logements Crous
+       Logement privé Jobs Les Crous
+     * Courts séjours Entrepreneuriat Quel master ? CVEC Mon garant
+       Logements Crous Logement privé Jobs Les Crous
+     * Izly - Payer sur le campus Courts séjours Entrepreneuriat Quel
+       master ? CVEC Mon garant Logements Crous Logement privé Jobs Les
+       Crous
+     * Assistance Izly - Payer sur le campus Courts séjours
+       Entrepreneuriat Quel master ? CVEC Mon garant Logements Crous
+       Logement privé Jobs Les Crous
+
+   Accessibilité téléphonique
+   (BUTTON) Accessibilité
+
+Nous suivre
+
+   Nous suivre sur Twitter Nous suivre sur Facebook Nous suivre sur
+   Instagram
+
+(BUTTON) Services Fermer
+
+(BUTTON) Inscription dans le supérieur
+
+   Parcoursup
+   Contribution vie étudiante et de campus
+
+(BUTTON) Bourses et aides
+
+   Demande de dossier social étudiant (DSE)
+   Suivi de dossier social étudiant (DSE)
+   Simulateur de bourses
+   Aide à la mobilité master
+   Aide à la mobilité Parcoursup
+
+(BUTTON) Logement
+
+   Trouver un logement en résidence Crous
+   Trouver un logement sur le campus Paris-Saclay
+   Trouver un logement chez un particulier
+   Courts séjours
+   Visale, votre garant
+   Gérer son logement - Cité'U
+
+(BUTTON) Autres services
+
+   Trouver un job étudiant
+   Izly - Payer sur le campus
+   Trouver un Resto'U
+   Santé Psy Étudiants, RDV psy gratuits
+   Buddy System, parrainage étudiants fr/internationaux
+   Les concours de création étudiante
+   Pass culture
+   Prendre RDV avec le Crous
+   Mytroc.fr, le troc simple, rapide et gratuit
+   Kip up - La presse gratuite sur smartphone
+   My Road, GPS de l'orientation
+   Contacter votre Crous ou notre assistance
+
+Breadcrumb
+
+    1. Accueil
+
+Ce qui change pour les étudiants transgenres
+
+   Le ministère de l'enseignement supérieur a proposé une série de mesures
+   pour favoriser l'inclusion des personnes transgenres dans la vie
+   étudiante et des étudiants LGBT+ de manière générale.
+
+Les mesures qui concernent les étudiants transgenres
+
+   Certains établissement ont déjà pris des mesures. Inscription sous son
+   prénom d'usage possible à l'Université de Lille, Université Rennes II,
+   Université Paris 8, Université de Caen Normandie, Université de Tours,
+   Université Lyon 1, EHESS...
+
+   Pour accompagner ce mouvement et encourager les établissements
+   d'enseignement supérieur à mieux inclure les étudiants trans., le
+   ministère de l'enseignement supérieur a annoncé plusieurs mesures en
+   2019.
+
+
+Le prénom d'usage reconnu pour l'inscription
+
+   L'inadéquation entre le prénom d'usage choisi pendant la transition par
+   un·e étudiant·e transgenre et le prénom inscrit à l'état civil peut se
+   révéler problématique dans la vie étudiante quotidienne. Se faire
+   appeler par un prénom auquel on ne s'identifie pas est inconfortable et
+   oblige également souvent à faire un coming-out de façon répétée.
+
+   Afin de lutter contre cette source d'angoisse au quotidien, depuis la
+   rentrée 2019, l'inscription sous le prénom d'usage est possible dans
+   les logiciels APOGÉE et SVE/Scolarix, qui sont utilisés par les
+   établissements d'enseignement supérieur afin de gérer les inscriptions
+   des étudiants.
+
+
+Le prénom d'usage et les documents
+
+   Liste non-exhaustive des documents qui peuvent mentionner le prénom
+   d'usage sans modification du prénom à l'état civil
+     * Carte étudiante
+     * Carte de bibliothèque
+     * Pour les élections : liste électorale, liste d'émargement, listes
+       de candidats
+     * Affichage des résultats d'examen
+     * Listes d'inscriptions, d'appels, d'émargement
+     * Adresse de messagerie étudiante
+
+   Liste non-exhaustive des documents qui nécessitent une modification du
+   prénom à l'état civil pour mentionner le prénom d'usage
+     * Diplôme
+     * Contrats doctoraux et contrats de travail
+     * Relevé de notes individuel (hors listes d'affichage des résultats
+       d'examen)
+     * Attestation de réussite
+     * Certificat de scolarité
+
+
+Le changement de prénom reconnu sur le diplôme
+
+   Si vous en faites la demande, et une fois votre prénom modifié à l'état
+   civil, votre établissement devra rééditer les diplômes éventuellement
+   délivrés avec votre ancien prénom.
+
+
+Une orientation vers la démarche de changement de prénom
+
+   Si vous souhaitez modifier votre prénom à l'état civil, les
+   établissements sont invités à vous informer des démarches à effectuer
+   afin de procéder à cette modification. Vous pouvez également dès
+   maintenant vous informer sur service-public.fr.
+
+
+Les mentions Madame/Monsieur facultatives
+
+   Ces mentions n'étant pas constitutives de l'état civil d'une personne,
+   elles pourront être supprimées des correspondances, formulaires et
+   autres documents internes aux établissements.
+
+   Concernant les diplômes, les mentions Madame/Monsieur, qui figurent
+   aujourd'hui dans les modèles de diplômes nationaux et de certains
+   diplômes d'État délivrés par les établissements d'enseignement
+   supérieur relevant du M.E.S.R.I , pourront également être supprimées,
+   sur simple demande de votre part.
+
+
+Lutte contre les LGBTphobies dans l'enseignement supérieur
+
+   De façon plus globale, le ministère de l'enseignement supérieur
+   souhaite renforcer la lutte contre les discriminations à l'encontre des
+   étudiants LGBT+. Quelques exemples.
+
+
+Signature d'une charte
+
+   Le M.E.S.R.I va signer la Charte de l'Autre Cercle, association de
+   lutte contre les discriminations liées à l'orientation sexuelle et à
+   l'identité de genre. Cette charte permet entre autres de s'assurer que
+   les pratiques de l'institution ne sont pas discriminantes pour les
+   personnes LGBT+. Les établissements de l'enseignement supérieur et de
+   la recherche sont par ailleurs invités à signer cette même charte.
+
+
+Formation des futurs enseignants, accompagnement des établissements
+
+   Pour atteindre cet objectif, le ministère de l'enseignement supérieur
+   va engager un travail auprès des Ecoles supérieures du professorat et
+   de l'éducation (ESPE) via l'Association de recherche sur le genre en
+   éducation et formation (ARGEF).
+
+   Le guide Reconnaître pour mieux agir réalisé par le M.E.S.R.I et qui
+   vise à aider les professionnels au sein de l'enseignement supérieur à
+   accompagner les personnes victimes de LGBTphobies, va être actualisé,
+   en partenariat avec des associations, et en incluant davantage les
+   personnes transgenres.
+
+
+Soutien à des associations engagées dans la lutte contre les LGBTphobies
+
+     * Soutien au Refuge : des chambres du Crous pourront servir
+       d'hébergement d'urgence, notamment pendant l'été
+     * Développement de projets spécifiques dans l'enseignement supérieur
+       avec SOS homophobie
+
+
+Ce que dit la loi
+
+   Les discriminations fondées sur l'orientation sexuelle ou l'identité de
+   genre sont des délits passibles d'une peine maximale de 3 ans
+   d'emprisonnement et 45 000 euros d'amende pour une personne physique.
+   Lorsqu'un agent public refuse sur ces mêmes fondements de fournir un
+   service ou un bien dans un lieu accueillant du public ou en interdit
+   l'accès, les peines sont portées à 5 ans d'emprisonnement et à 75 000
+   euros d'amende.
+
+   > Si vous avez été victime de discrimination, n'hésitez pas à consulter
+   nos ressources sur le sujet
+
+
+Voir aussi...
+
+   > La page « Lutte contre les LGBTphobies » > La page « Violences
+   sexistes et sexuelles
+
+Node Footer Info
+
+   Article Publié le 17.05.2019 # Enseignement supérieur # Suivi
+   pédagogique # Vos droits # Démarches administratives # Violences et
+   discriminations
+
+   Haut de page
+
+Nous suivre
+
+   Nous suivre sur Twitter Nous suivre sur Facebook Nous suivre sur
+   Instagram
+
+Vos sites
+
+     * MesServices.etudiant.gouv.fr
+     * campusfrance.org MesServices.etudiant.gouv.fr
+     * monmaster.gouv.fr campusfrance.org MesServices.etudiant.gouv.fr
+     * onisep.fr monmaster.gouv.fr campusfrance.org
+       MesServices.etudiant.gouv.fr
+     * pepite-france.fr onisep.fr monmaster.gouv.fr campusfrance.org
+       MesServices.etudiant.gouv.fr
+     * parcoursup.fr pepite-france.fr onisep.fr monmaster.gouv.fr
+       campusfrance.org MesServices.etudiant.gouv.fr
+     * esr.gouv.fr parcoursup.fr pepite-france.fr onisep.fr
+       monmaster.gouv.fr campusfrance.org MesServices.etudiant.gouv.fr
+     * jeunes.gouv.fr esr.gouv.fr parcoursup.fr pepite-france.fr onisep.fr
+       monmaster.gouv.fr campusfrance.org MesServices.etudiant.gouv.fr
+
+Les Crous
+
+   (BUTTON) Sélectionner un Crous
+     * Crous d'Aix Marseille Avignon
+     * Crous d'Amiens Picardie
+     * Crous d'Antilles Guyane
+     * Crous de Bordeaux
+     * Crous de Bourgogne Franche Comté
+     * Crous Clermont Auvergne
+     * Crous de Corse
+     * Crous de Créteil
+     * Crous de Grenoble
+     * Crous de La Réunion
+     * Crous de Lille
+     * Crous de Limoges
+     * Crous de Lorraine
+     * Crous de Lyon
+     * Crous de Montpellier
+     * Crous de Nantes
+     * Crous de Nice
+     * Crous de Normandie
+     * Crous d'Orleans Tours
+     * Crous de Paris
+     * Crous de Poitiers
+     * Crous de Reims
+     * Crous de Rennes
+     * Crous de Strasbourg
+     * Crous de Toulouse
+     * Crous de Versailles
+
+   Ministère de l'Enseignement supérieur et de la Recherche
+   Ministère de l'Enseignement supérieur et de la Recherche
+   logo les Crous
+   logo les Crous
+
+Pied de page
+
+     * Mentions légales
+     * Accessibilité : partiellement conforme
+     * Plan du site
+     * Données personnelles
+     * Gestion des cookies
+
+Footer autres sites
+
+     * service-public.fr
+     * legifrance.gouv.fr service-public.fr
+     * gouvernement.fr legifrance.gouv.fr service-public.fr
+     * france.fr gouvernement.fr legifrance.gouv.fr service-public.fr
+     * data.gouv.fr france.fr gouvernement.fr legifrance.gouv.fr
+       service-public.fr
+     * elysee.fr data.gouv.fr france.fr gouvernement.fr legifrance.gouv.fr
+       service-public.fr
