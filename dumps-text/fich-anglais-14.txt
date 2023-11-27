@@ -303,7 +303,7 @@ service
      * Gender
      * Labour
      * Keir Starmer
-     * Children
+     * Human rights
 
      * UK
      * UK politics
