@@ -24,6 +24,6 @@ while IFS= read -r URL; do
     sed -n '/^References/,$!p' | \
     awk '/References/{exit} {if(length($0)>0) print}' | \
     grep -v '^[[:space:]]*$' | \
-    sed 's/[A-Za-z0-9[:punct:]]//g'
+    sed 's/[A-Za-z[:punct:]]//g'
     echo "------------------------------------------------"
 done < "$1"
