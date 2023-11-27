@@ -1,44 +1,43 @@
 #!/usr/bin/env bash
 
-if [ $# -ne 1 ]
-then
-    echo "Ce script a besoin d'un argument : <chemin du fichier>."
-    exit
-fi
 
-chemin="$1"
+search_word="跨性别"
+file=$1
 
-if [ ! -f "$chemin" ]
-then
+# 检查文件是否存在
+if [ ! -f "$file" ]; then
     echo "Le fichier spécifié n'existe pas."
-    exit
+    exit 1
 fi
 
 echo "<html>
- <head><title>Tableau</title><meta charset="UTF-8" /></head>
+ <head><title>Tableau</title><meta charset='UTF-8' /></head>
  <body>
  <table border='1'>
- <tr><th>N°</th><th>URL</th><th>http_code</th><th>encoding</th></tr>" > tableau-chinois.html
+ <tr><th>N°</th><th>URL</th><th>Code HTTP</th><th>encoding</th><th>Aspirations</th><th>Dump text</th><th>compte</th><th>contextes</th></tr>" > tableau-ch.html
 
 N=1
 
-while read -r line
-do
+while read -r line; do
+    # 使用 curl 获取文本内容
+    curl -o "dump${N}.txt" -s "${line}"
+
+    # 计算词汇出现的次数
+    count=$(grep -o "$search_word" "dump${N}.txt" | wc -l)
+    rm "dump${N}.txt"
+
+
     http_response=$(curl -I -s "${line}")
     http_code=$(echo "$http_response" | grep -oE 'HTTP/[0-9.]+\s[0-9]+' | awk '{print $2}')
     encoding=$(echo "$http_response" | grep -i 'Content-Type' | grep -oP 'charset=\K([-A-Za-z0-9]+)')
 
-    if [ -z "$encoding" ]
-    then
+    if [ -z "$encoding" ]; then
         encoding="N/A"
     fi
 
-    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td></tr>" >> tableau-chinois.html
+    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td><td><a href='./../aspirations/ch/fich${N}-ch.html'>Aspiration${N}</a></td><td><a href='./../dumps-text/ch/fich${N}-ch.txt'>Dump${N}</a></td><td>${count}</td><td><a href='./../contextes/ch/fich${N}-ch.txt'>Contexte${N}</a></td></tr>" >> tableau-ch.html
 
     N=$(expr $N + 1)
+done < "$file"
 
-done < "$chemin"
-
-echo "</table>"
-echo "</body>"
-echo "</html>"
+echo "</table></body></html>" >> tableau-ch.html
