@@ -82,6 +82,8 @@
                o 2023 April Fools Event
                o Aster Appreciation Page
                o Username Badges
+               o Trigger Warnings
+               o Tone Tags
           + Resources
                o FAQ: Wiki Questions
                o Administration
@@ -109,7 +111,7 @@
 
    Gender Wiki
    More than Two Genders
-   3,147
+   3,145
    pages
 
      * Explore
@@ -192,6 +194,8 @@
                o 2023 April Fools Event
                o Aster Appreciation Page
                o Username Badges
+               o Trigger Warnings
+               o Tone Tags
           + Resources
                o FAQ: Wiki Questions
                o Administration
@@ -361,7 +365,7 @@ Fan Feed
    More Gender Wiki
      * 1 Demiboy
      * 2 Demigirl
-     * 3 Bigender
+     * 3 Xenogender
 
 Fandom logo
 

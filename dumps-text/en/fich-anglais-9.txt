@@ -107,8 +107,7 @@
                o La cape cervicale : comment ça marche ?
                o Les spermicides : comment ça marche ?
                o Les progestatifs injectables : comment ça marche ?
-               o La stérilisation à visée contraceptive : comment ça
-                 marche ?
+               o La contraception définitive : comment ça marche ?
                o Qu’est-ce que la contraception dite « naturelle » ?
           + (BUTTON) La contraception d'urgence
                o Contraception d’urgence : comment ça marche ?
@@ -331,8 +330,7 @@
                o La cape cervicale : comment ça marche ?
                o Les spermicides : comment ça marche ?
                o Les progestatifs injectables : comment ça marche ?
-               o La stérilisation à visée contraceptive : comment ça
-                 marche ?
+               o La contraception définitive : comment ça marche ?
                o Qu’est-ce que la contraception dite « naturelle » ?
           + (BUTTON) La contraception d'urgence
             (BUTTON) Retour La contraception d'urgence
