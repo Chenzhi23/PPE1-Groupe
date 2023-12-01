@@ -5,7 +5,8 @@ search_word="跨性别"
 file=$1
 
 # 检查文件是否存在
-if [ ! -f "$file" ]; then
+if [ ! -f "$file" ]
+then
     echo "Le fichier spécifié n'existe pas."
     exit 1
 fi
@@ -18,20 +19,24 @@ echo "<html>
 
 N=1
 
-while read -r line; do
+while read -r line
+do
     # 使用 curl 获取文本内容
     curl -o "dump${N}.txt" -s "${line}"
 
-    # 计算词汇出现的次数
-    count=$(grep -o "$search_word" "dump${N}.txt" | wc -l)
+    # 计算词汇出现的次数, -o，它仅输出匹配模式本身的部分
+    count=$(grep -o "$search_word" "dump${N}.txt" | wc -l) 
     rm "dump${N}.txt"
 
 
     http_response=$(curl -I -s "${line}")
+    # -I 选项表示只获取 HTTP 响应头  -s 选项使 curl 在执行时不显示任何输出（静默模式）
     http_code=$(echo "$http_response" | grep -oE 'HTTP/[0-9.]+\s[0-9]+' | awk '{print $2}')
+
     encoding=$(echo "$http_response" | grep -i 'Content-Type' | grep -oP 'charset=\K([-A-Za-z0-9]+)')
 
-    if [ -z "$encoding" ]; then
+    if [ -z "$encoding" ]
+    then
         encoding="N/A"
     fi
 
