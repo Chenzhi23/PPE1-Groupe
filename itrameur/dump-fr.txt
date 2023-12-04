@@ -1,0 +1,602 @@
+<lang="fr">
+<page="fr-1">
+<text>
+   Aller au contenu
+   (BUTTON)
+   Menu
+   Agir
+   Faire un don
+     * Don ponctuel
+     * Don mensuel
+
+   ( ) 50 EUR
+   ( ) 80 EUR
+   (*) 100 EUR
+   ou montant libre :
+   Montant du don ____________________
+   EUR
+</text>
+</page>§
+<page="fr-2">
+<text>
+
+</text>
+</page>§
+<page="fr-3">
+<text>
+   #alternate alternate alternate alternate alternate alternate Instituto
+</text>
+</page>§
+<page="fr-4">
+<text>
+
+</text>
+</page>§
+<page="fr-5">
+<text>
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-N7PFLTH4
+
+   psychologues
+   [] Espace professionnel [ ]
+</text>
+</page>§
+<page="fr-6">
+<text>
+   #alternate
+
+   IFRAME:
+   https://www.googletagmanager.com/ns.html?id=GTM-5QNLTGR&amp;gtm_auth=XWh1Nl
+   Oe7Udt_V-KXeCUVQ&amp;gtm_preview=env-2&amp;gtm_cookies_win=x
+
+   (BUTTON) Menu
+</text>
+</page>§
+<page="fr-7">
+<text>
+   #alternate
+
+   Aller au contenu principal
+
+   (BUTTON) Mon compte
+     * (BUTTON)
+     * Abo Mon compte johndoe@mail.com
+     *
+          + Mon abonnement
+          + Mes newsletters
+</text>
+</page>§
+<page="fr-8">
+<text>
+   Aller au contenu principal
+</text>
+</page>§
+<page="fr-9">
+<text>
+    [logo.svg]
+</text>
+</page>§
+<page="fr-10">
+<text>
+                                403 Forbidden
+     __________________________________________________________________
+
+                                    nginx
+</text>
+</page>§
+<page="fr-11">
+<text>
+    #Flux RSS pour capital.fr
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-WKQXL3P
+
+   (BUTTON)
+   Menu
+</text>
+</page>§
+<page="fr-12">
+<text>
+    #alternate
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5H2XS26
+</text>
+</page>§
+<page="fr-13">
+<text>
+   #alternate alternate alternate
+
+   Skip to main content
+
+   (BUTTON)
+</text>
+</page>§
+<page="fr-14">
+<text>
+
+</text>
+</page>§
+<page="fr-15">
+<text>
+   #alternate alternate
+
+   Passer au contenu principal
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5F844BH
+
+   Bienvenue aux Nations Unies
+
+Language
+
+     * a+l+e+r+b+y+tm
+</text>
+</page>§
+<page="fr-16">
+<text>
+
+</text>
+</page>§
+<page="fr-17">
+<text>
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-P722869&amp;
+</text>
+</page>§
+<page="fr-18">
+<text>
+
+   Oops,
+   for an optimal navigation,
+   please enable your Scripts
+
+   Aller au contenu principal
+
+   Autres informations et services officiels : www.belgium.be
+</text>
+</page>§
+<page="fr-19">
+<text>
+
+</text>
+</page>§
+<page="fr-20">
+<text>
+   (BUTTON) (BUTTON) Recherche
+     * Le Journal
+     * Newsletters
+     * Mes articles
+     * Le Guide
+     * Fiches entreprise
+     * Podcasts
+</text>
+</page>§
+<page="fr-21">
+<text>
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-NT3GRKD
+
+   #alternate
+
+   (BUTTON) (BUTTON)
+
+   (BUTTON) sujets
+
+   Choses (BUTTON)
+</text>
+</page>§
+<page="fr-22">
+<text>
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5X4M
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PTK4MRSR
+
+   Aller au contenu
+
+   (BUTTON) Menu
+</text>
+</page>§
+<page="fr-23">
+<text>
+
+</text>
+</page>§
+<page="fr-24">
+<text>
+   #alternate alternate alternate alternate alternate alternate alternate
+   alternate alternate alternate alternate homepage
+
+   [ ]
+</text>
+</page>§
+<page="fr-25">
+<text>
+   #alternate
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-T6GPC7L
+
+   Fermer
+     * MEDADOM
+          + Je consulte
+</text>
+</page>§
+<page="fr-26">
+<text>
+   #usito.usherbrooke.ca
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-T8WRXNX
+</text>
+</page>§
+<page="fr-27">
+<text>
+
+</text>
+</page>§
+<page="fr-28">
+<text>
+
+   Created with Sketch.
+     * S'identifier
+</text>
+</page>§
+<page="fr-29">
+<text>
+
+</text>
+</page>§
+<page="fr-30">
+<text>
+
+</text>
+</page>§
+<page="fr-31">
+<text>
+
+</text>
+</page>§
+<page="fr-32">
+<text>
+   Se connecter  |   Contacter AD2S
+     |
+   ____________________ Go
+     * Accueil
+          + Les financeurs du projet
+          + Les organismes ouvreurs de droits
+          + Les organismes utilisateurs
+</text>
+</page>§
+<page="fr-33">
+<text>
+   #alternate
+
+     * Aller au menu
+</text>
+</page>§
+<page="fr-34">
+<text>
+
+</text>
+</page>§
+<page="fr-35">
+<text>
+
+</text>
+</page>§
+<page="fr-36">
+<text>
+   #alternate Modifier Wiktionnaire (fr) Flux Atom de Wiktionnaire
+
+   Aller au contenu
+
+   [ ] Menu principal
+   Menu principal
+</text>
+</page>§
+<page="fr-37">
+<text>
+   Aller au contenu principal
+
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-WJPFJSR
+
+   Vos envies de lecture commencent ici
+
+
+
+   La newsletter
+
+   facebook
+
+   twitter
+
+   youtube
+
+   pinterest
+
+   instagram
+
+   tiktok
+   ______________________________
+   (Rechercher) Rechercher
+   Accueil (BUTTON) Toggle navigation
+
+     * logo sticky
+</text>
+</page>§
+<page="fr-38">
+<text>
+
+</text>
+</page>§
+<page="fr-39">
+<text>
+   Access content directly HAL open science HAL open science (BUTTON)
+
+     * Documentation
+     * (BUTTON) EN
+       French (FR)
+       English (EN)
+     * (BUTTON) Sign in
+
+     * Collection TRANSGENRE
+     * (BUTTON) Search ____________________
+       Loading...
+       (BUTTON)
+
+Advanced Search
+       Information de documents
+       (title_t) Titles
+          + Titles
+          + Subtitle
+          + Work title
+          + hal_serie_t
+          + Default search field (multi-criteria) + PDF full text
+          + Abstract
+          + Full text of PDF document
+          + Keywords
+          + Document type
+          + Document subtype
+          + All document identifiers
+          + HAL submission identifier
+          + Language of document (text)
+          + Country (Text)
+          + City
+          + hal_inPress_bool
+       ____________________ (BUTTON) Add
+       Author
+       (auth_t) Author (multi-criteria)
+          + Author (multi-criteria)
+          + Author: Full name
+          + Author: Last name
+          + Author: First name
+          + Author: middle name
+          + Author: funding institution
+          + Author: IdHal (string)
+          + Author: function
+          + Author: personID (integer)
+          + Author: funding institution identifier
+          + Author: Structure identifier
+          + Thesis director
+          + Publisher
+          + Scientific editor
+          + Series editor
+       ____________________ (BUTTON) Add
+       Structure
+       (structure_t) Structure (multi-criteria)
+          + Structure (multi-criteria)
+          + Structure: Acronym
+          + Structure: Name
+          + Structure: Code
+          + Structure: Country
+          + Structure: Type
+          + Structure: Referential status
+          + Structure: Internal structure identifier
+          + Structure/research team: Country
+          + Structure/department: Country
+          + Structure/laboratory: Country
+          + Structure/group of departments: State
+          + Structure/institution: Country
+          + Structure/group of institutions: Country
+       ____________________ (BUTTON) Add
+       Autres
+       (text) Default search field (multi-criteria)
+          + Default search field (multi-criteria)
+          +
+          + Journals (multi-criteria)
+          + Journal: Publisher
+          + Journal: Abbreviated title
+          + Journal: Title
+          + Journal: Internal identifier
+          + Journal: beginning publication date
+          + Journal: online ISSN
+          + Journal: ISSN
+          + Journal: Publisher
+          + Journal: SHERPA/RoMEO color
+          + Journal: referential status
+          +
+          + Conference (multi-criteria)
+          + Conference: Title
+          + Conference: Organiser
+          + Conference: beginning date (Year)
+          + Conference: end date (Year)
+          + Invited communication (yes/no)
+          +
+          + ANR project (multi-criteria)
+          + ANR project: Acronym
+          + hal_anrProjectAcronymProgram_t
+          + ANR project: Code decision (reference)
+          + ANR project: Name
+          + ANR project: Internal identifier
+          + ANR project: Referential Status
+          +
+          + European project (multi-criteria)
+          + European project: Acronym
+          + European project: Call identifier
+          + European project: Reference
+          + European project: Name
+          + European project: end date
+          + European project: Funding
+          + European project: beginning date
+          + European project: Referential status
+          + European project: Internal identifier
+          +
+          + Publication date: year
+          + Release date: year
+          + hal_publicationDateY_i
+          + Writing date: year
+          + Date modified: year
+          + Submission Date: year
+          + Online Publication date: year
+          +
+          + HAL Collection (multi-criteria)
+          + HAL Collection: category
+          + HAL Collection: Code
+          + HAL Collection: Name
+          + HAL Collection: Internal identifier
+          +
+          + Contributor/author Internal identifier
+          + Contributor/author Full name
+          +
+          + Domains
+          + Primary domain
+          + Root domain
+          + Sub-domain level 1
+          + Sub-domain level 2
+          + Sub-domain level 3
+          +
+          + Status of document
+          + Document version
+          + Submission type
+          + Document type
+          + ISBN
+          + Number - reference
+          + Identifier: DOI
+          +
+          + Classification
+          + Audience
+          + Vulgarization
+          + Peer reviewing - text (yes or no)
+          + Conference proceedings
+          + Internal reference
+          + Funding
+          + Collaborations
+       ____________________ (BUTTON) Add
+
+       (Lancer la recherche) Lancer la recherche
+       (BUTTON) Search using SolR syntax
+
+Search using SolR syntax
+
+       ___________________________________________________________________
+       ___________________________________________________________________
+       ___________________________________________________________________
+       ___________________________________________________________________
+       (BUTTON) Run the search
+</text>
+</page>§
+<page="fr-40">
+<text>
+
+</text>
+</page>§
+<page="fr-41">
+<text>
+   IFRAME:
+   https://www.googletagmanager.com/ns.html?id=GTM-MPQ4MT3&amp;gtm_auth=k-G4st
+   m7nLcLl1b2P1QCDg&amp;gtm_preview=env-2&amp;gtm_cookies_win=x
+
+   Doctrine
+   (menu) MENU
+     * Plateforme
+</text>
+</page>§
+<page="fr-42">
+<text>
+   IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PBBRNWH
+
+   Logo Orthodidacte Logo Orthodidacte en petit
+</text>
+</page>§
+<page="fr-43">
+<text>
+
+</text>
+</page>§
+<page="fr-44">
+<text>
+   #wikiHow (fr) alternate alternate alternate alternate alternate
+   alternate alternate
+
+   Skip to Content
+   ____________________ (BUTTON)
+     * COURS
+     * EXPLORER
+</text>
+</page>§
+<page="fr-45">
+<text>
+   REFRESH(300 sec):
+   https://www.grazia.fr/news-et-societe/news/le-genre-ideal-la-nouvelle-g
+   eneration-transgenre-sexprime-enfin-216343.html
+</text>
+</page>§
+<page="fr-46">
+<text>
+   Aller au contenu principal
+
+qsdqsdqdqd
+
+   IFRAME:
+   //www.ultimedia.com/deliver/generic/iframe/mdtk/01271336/zone/1/showtit
+   le/1/src/vqls8s/autoplay/yes
+
+   menu
+   Accueil
+   _______________ (<lt;i class="ico ico-search" aria-hidden="true">gt;<lt;/i>gt;)
+
+Menu liens sociaux
+
+     * Facebook
+     * Twitter
+     * RSS
+
+User account menu
+
+     * Panier
+     * S'identifier
+
+   _______________ (<lt;i class="ico ico-search" aria-hidden="true">gt;<lt;/i>gt;)
+
+User account menu
+
+     * Panier
+     * S'identifier
+
+Magazine
+
+Magazine
+</text>
+</page>§
+<page="fr-47">
+<text>
+   #alternate alternate
+
+   IFRAME: //www.googletagmanager.com/ns.html?id=GTM-K32QLN
+
+   Menu Se connecter Bonjour S'abonner -50% La TVLe journalLes newsletters
+</text>
+</page>§
+<page="fr-48">
+<text>
+   Rechercher...__ OK
+</text>
+</page>§
+<page="fr-49">
+<text>
+
+</text>
+</page>§
+<page="fr-50">
+<text>
+
+
+   IFRAME:
+   https://www.googletagmanager.com/ns.html?id=GTM-PQ44X7Q&amp;gtm_auth=SOfOzT
+   aW-YSdcZpOo6txLw&amp;gtm_preview=env-20&amp;gtm_cookies_win=x
+</text>
+</page>§
+</lang>
