@@ -22,20 +22,23 @@ do
 		code=$(curl -I -L -s -w "%{http_code}" -o /dev/null $line)
 		charset=$(curl -I -s -w "%{content_type}" -o /dev/null $line | grep -P -o "charset=\S+" | cut -d "=" -f2)
 		
-		if [ $code == "200" ]
+		if [ $code == "200" ];
 		then
 			# aspirations
 			curl -L $line > ../aspirations/en/fich-$lang-$counter.html
 			# dump text
 			lynx --dump --nolist $line > ../dumps-text/en/fich-$lang-$counter.txt
 			# occurence de mot étudié
-			occurence=$(lynx --nolist --dump $line | grep -i transgender | wc -l)
+			occurence=$(grep -i -o "transgender" ../dumps-text/en/fich-$lang-$counter.txt| wc -l)
 			# récupérer les contextes
-			lynx --nolist --dump $line | grep -i -B 1 -A 1 "transgender" > ../contextes/en/fich-$lang-$counter.txt
+			grep -i -B 1 -A 1 "transgender" ../dumps-text/en/fich-$lang-$counter.txt > ../contextes/en/fich-$lang-$counter.txt
+			# concordances
+			# grep -i -o -P "(\w+\s){0,5}transgender(\s\w+){0,5}" fich-anglais-3.txt | sed 's/\btransgender\b/\t&\t/g'
 			# remplie le tableau
 			echo -e "\t\t\t<tr><td>$counter</td><td>$line</td><td>$code</td><td>$charset</td><td>$occurence</td><td><a href="../aspirations/en/fich-$lang-$counter.html">aspiration-$lang-$counter</a></td><td><a href="../dumps-text/en/fich-$lang-$counter.txt">dump-$lang-$counter</a></td><td><a href="../contextes/en/fich-$lang-$counter.txt">contexte-$lang-$counter</a></td></tr>" >> ../tableaux/tableau-en.html
 			counter=$(expr $counter + 1)
 		fi
+	fi
 done < $urlfile
 
 
