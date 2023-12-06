@@ -12,7 +12,7 @@ numero=0
 while read -r URL;
 do
      numero=$( expr $numero + 1 )
-     w3m $URL > ./../dumps-text/ch/fich${numero}-ch.txt
+     w3m $URL > ./../dumps-text/ch/ch-${numero}.txt
      done < $file
 
 

@@ -40,9 +40,15 @@ do
         encoding="N/A"
     fi
 
-    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td><td><a href='./../aspirations/ch/fich${N}-ch.html'>Aspiration${N}</a></td><td><a href='./../dumps-text/ch/fich${N}-ch.txt'>Dump${N}</a></td><td>${count}</td><td><a href='./../contextes/ch/fich${N}-ch.txt'>Contexte${N}</a></td></tr>" >> tableau-ch.html
+    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td><td><a href='./../aspirations/ch/ch-${N}.html'>Aspiration${N}</a></td><td><a href='./../dumps-text/ch/ch-${N}.txt'>Dump${N}</a></td><td>${count}</td><td><a href='./../contextes/ch/ch-${N}.txt'>Contexte${N}</a></td></tr>" >> tableau-ch.html
 
     N=$(expr $N + 1)
 done < "$file"
 
 echo "</table></body></html>" >> tableau-ch.html
+
+
+
+
+
+
