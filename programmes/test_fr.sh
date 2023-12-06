@@ -8,8 +8,8 @@ then
 fi
 
 ###chemin=$(./../tableaux/tableau-fr.html)
-
-chemin=./../tableaux/tableau-fr.html
+lang=$(basename $1 .txt)
+chemin=./../tableaux/$lang.html
 ###echo "<html>" > $chemin   行得通
 ## chemin="./../tableaux/tableau-fr.html" 加不加双引号都行
 ## 也可以把 chemin 变成argument (chemin=$2)
