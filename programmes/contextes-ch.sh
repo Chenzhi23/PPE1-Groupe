@@ -11,6 +11,6 @@ do
     N=$( expr $N + 1 )
 
     # 获取包含指定词汇的上下文
-    grep -C 2 "$search_word" "./../dumps-text/ch/fich${N}-ch.txt" > "./../contextes/ch/fich${N}-ch.txt"
+    grep -C 2 "$search_word" "./../dumps-text/ch/ch-${N}.txt" > "./../contextes/ch/ch-${N}.txt"
 
 done < $input_liens
