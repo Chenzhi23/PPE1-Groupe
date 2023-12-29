@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="zh-hans" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-7de20fdcb72d0357be8",applicationID:"529481584"};;/*! For license information please see nr-loader-rum-1.248.0.min.js.LICENSE.txt */
+(()=>{var e,t,n={234:(e,t,n)=>{"use strict";n.d(t,{P_:()=>h,Mt:()=>m,C5:()=>s,DL:()=>w,OP:()=>j,lF:()=>R,Yu:()=>_,Dg:()=>v,CX:()=>c,GE:()=>A,sU:()=>T});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a);const n=(0,r.ek)(e);n&&(n.info=o[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=n(7056),l=n(50);const f=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector=t+",[data-nr-mask]":null===t?e.mask_selector=t:(0,l.Z)("An invalid session_replay.mask_selector was provided and will not be used",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},g={},p="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(p);if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function v(e,t){if(!e)throw new Error(p);g[e]=(0,i.D)(t,f());const n=(0,r.ek)(e);n&&(n.init=g[e])}function m(e,t){if(!e)throw new Error(p);var n=h(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const b={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},y={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!y[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return y[e]}function A(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");y[e]=(0,i.D)(t,b);const n=(0,r.ek)(e);n&&(n.loader_config=y[e])}const _=(0,r.mF)().o;var x=n(385),D=n(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(x._A?.performance?.timeOrigin||x._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+x._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof x._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},E={};function j(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function T(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,k);const n=(0,r.ek)(e);n&&(n.runtime=E[e])}function R(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{"use strict";n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{Array.isArray(e[o])&&Array.isArray(t[o])?n[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{"use strict";n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.248.0",i="PROD",a="CDN"},385:(e,t,n)=>{"use strict";n.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=(a?.document?.readyState,Boolean("hidden"===a?.document?.visibilityState)),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{"use strict";n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{"use strict";n.d(t,{L:()=>d,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};u(e),s[e].get(t)||s[e].set(t,n)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{"use strict";n.d(t,{A:()=>c,ee:()=>u});var r=n(8632),i=n(2210),a=n(234);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),u=function e(t,n){var r={},s={},d={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(u.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,r.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,n)=>{"use strict";n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{"use strict";n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{"use strict";n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{"use strict";n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{"use strict";n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{"use strict";n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{"use strict";function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{"use strict";function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2825:(e,t,n)=>{"use strict";n.d(t,{N:()=>d,T:()=>l});var r=n(8325),i=n(5546),a=n(3325),o=n(385);const s="newrelic";const c={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},u=new Set;function d(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,r]=e;c[t]?c[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),l[t]=Boolean(r)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{o._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,n)=>{"use strict";n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{"use strict";n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{"use strict";n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{"use strict";n.d(t,{KB:()=>o,b2:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{"use strict";n.d(t,{EZ:()=>d,ce:()=>a,ek:()=>u,fP:()=>o,gG:()=>l,h5:()=>c,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let n=o();n.initializedAgents??={},t.initializedAt={ms:(0,r.z)(),date:new Date},n.initializedAgents[e]=t}function u(e){let t=o();return t.initializedAgents?.[e]}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{"use strict";n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{"use strict";n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{"use strict";n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{"use strict";n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{"use strict";n.d(t,{W:()=>i});var r=n(8325);class i{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=r.ee.get(e),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{"use strict";n.d(t,{j:()=>b});var r=n(3325),i=n(234),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),u=n(3960),d=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2825);const v=e=>{const t=e.startsWith("http");e+="/",n.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,_||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const E=(0,i.P_)(e.agentIdentifier),j=[A.beacon,A.errorBeacon];m||(E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,a.p)(f.xS,["API/recordReplay/called"],void 0,r.D.metrics,p),(0,a.p)("recordReplay",[],void 0,r.D.sessionReplay,p)},g.pauseReplay=function(){(0,a.p)(f.xS,["API/pauseReplay/called"],void 0,r.D.metrics,p),(0,a.p)("pauseReplay",[],void 0,r.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(f.xS,["API/createTracer/called"],void 0,r.D.metrics,p),(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function _(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=D),m=!0}},1926:(e,t,n)=>{n.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,n)=>{"use strict";n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.248.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.248.0.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),s.integrity=i.sriHashes[o],s.crossOrigin="anonymous"),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",i.sriHashes={75:"sha512-5mWtMwj7hrXT5aUkfvBtjH6FJXsR+zdeMBfc721nzrOx36xa23yTrCB1VVOAQa+zIioAbWPW4m7UsPp7hW1WPw=="},(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,u=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.248.0.PROD"]=self["webpackChunk:NRBA-1.248.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{"use strict";i(1926);var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The page action feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The js errors feature is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}recordReplay(){(0,e.Z)("Call to agent api recordReplay failed. The agent is not currently initialized.")}pauseReplay(){(0,e.Z)("Call to agent api pauseReplay failed. The agent is not currently initialized.")}}var n=i(3325),r=i(234);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,d.b2)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),T=i(7894),R=i(9251);class S extends f{static featureName=R.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,n),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,T.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,T.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class C extends f{static featureName=I.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(n,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){try{const t=o(this.agentIdentifier),r=[...this.desiredFeatures];r.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),r.forEach((r=>{if(t[r.featureName]||r.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(r.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(r.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[r.featureName]=new r(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,S,C],loaderType:"lite"})})()})();</script>
+<script>window['sa_metadata'] = {"title":"\u65e5\u672c\u6cd5\u9662\u63a8\u7ffb\u8de8\u6027\u522b\u8005\u5f3a\u5236\u7edd\u80b2\u89c4\u5b9a","langcode":"zh-hans","node_id":"386238","entity_type":"node","node_type":"news","created":"1697428800","region_country":["Asia","Japan"],"topic":["LGBT Rights"],"news_type":["Dispatches"],"division":"LGBT Rights"};</script>
+<script async defer src="/libraries/custom/simpleanalytics.js"></script>
+<script src="/modules/custom/hrw_consent/js/hrwconsent.js?v=1.7"></script>
+<script>
+        HrwConsent = new HrwConsent;
+        HrwConsentSettings.domain = 'hrw.org';
+        HrwConsentSettings.expires = 365;
+      </script>
+<script>var _mtm = window._mtm = window._mtm || [];_mtm.push({"mtm.startTime": (new Date().getTime()), "event": "mtm.Start"});var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];g.type = "text/javascript";g.async = true;g.src="https://open-analytics.hrw.org/js/container_MOFt5fSb.js";s.parentNode.insertBefore(g, s);</script>
+<meta name="description" content="日本一所家事法院判决，跨性别人士必须完成绝育手术才能合法变更性别的法律违宪。这件判决创下日本首例，同时日本最高法院正在审理同一议题的另一案件。" />
+<link rel="canonical" href="https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" />
+<meta name="google" content="H_DzcJuJMJKVAO6atlPsK4HHr2WienspT6e74P5fVFY" />
+<meta property="og:site_name" content="Human Rights Watch" />
+<meta property="og:url" content="https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" />
+<meta property="og:title" content="日本法院推翻跨性别者强制绝育规定" />
+<meta property="og:description" content="日本一所家事法院判决，跨性别人士必须完成绝育手术才能合法变更性别的法律违宪。这件判决创下日本首例，同时日本最高法院正在审理同一议题的另一案件。" />
+<meta property="og:image" content="https://www.hrw.org/sites/default/files/styles/opengraph/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?h=cd79c055&amp;itok=qqe55hHi" />
+<meta property="og:image:secure_url" content="https://www.hrw.org/sites/default/files/styles/opengraph/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?h=cd79c055&amp;itok=qqe55hHi" />
+<meta property="og:updated_time" content="2023-10-26T07:26:17-0400" />
+<meta property="og:image:alt" content="铃木元（中）赴静冈家事法院滨松分院（静冈家庭裁判所滨松支部）出庭，2022年10月14日。" />
+<meta property="article:publisher" content="https://www.facebook.com/HumanRightsWatch" />
+<meta property="article:published_time" content="2023-10-16T00:00:00-0400" />
+<meta property="article:modified_time" content="2023-10-26T07:26:17-0400" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="日本法院推翻跨性别者强制绝育规定" />
+<meta name="twitter:description" content="日本一所家事法院判决，跨性别人士必须完成绝育手术才能合法变更性别的法律违宪。这件判决创下日本首例，同时日本最高法院正在审理同一议题的另一案件。" />
+<meta name="twitter:site" content="@hrw" />
+<meta name="twitter:site:id" content="14700316" />
+<meta name="twitter:image" content="https://www.hrw.org/sites/default/files/styles/opengraph/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?h=cd79c055&amp;itok=qqe55hHi" />
+<meta name="twitter:image:alt" content="铃木元（中）赴静冈家事法院滨松分院（静冈家庭裁判所滨松支部）出庭，2022年10月14日。" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "NewsArticle",
+            "headline": "日本法院推翻跨性别者强制绝育规定",
+            "description": "日本一所家事法院判决，跨性别人士必须完成绝育手术才能合法变更性别的法律违宪。这件判决创下日本首例，同时日本最高法院正在审理同一议题的另一案件。",
+            "image": {
+                "@type": "ImageObject",
+                "representativeOfPage": "True",
+                "url": "https://www.hrw.org/sites/default/files/styles/opengraph/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?h=cd79c055\u0026itok=qqe55hHi"
+            },
+            "datePublished": "2023-10-16T00:00:00-0400",
+            "dateModified": "2023-10-26T07:26:17-0400",
+            "author": {
+                "@id": "https://www.hrw.org/zh-hans/about/people/222383",
+                "name": "土井香苗",
+                "url": "https://www.hrw.org/zh-hans/about/people/222383"
+            },
+            "publisher": {
+                "@type": "NGO",
+                "@id": "https://www.hrw.org/zh-hans",
+                "name": "Human Rights Watch",
+                "url": "https://www.hrw.org/zh-hans",
+                "logo": {
+                    "@type": "ImageObject",
+                    "representativeOfPage": "False",
+                    "url": "https://www.hrw.org/zh-hans/themes/custom/hrw_design/dist/app-drupal/assets/logo.svg"
+                }
+            },
+            "mainEntityOfPage": "https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization"
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization",
+            "speakable": {
+                "@type": "SpeakableSpecification",
+                "cssSelector": "#block-hrw-design-content"
+            }
+        }
+    ]
+}</script>
+<link rel="icon" href="/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<script src="/sites/default/files/google_tag/hrw_tag_manager/google_tag.script.js?s56w8l" defer></script>
+<link rel="preload" as="font" href="/themes/custom/hrw_design/dist/app-drupal/assets/fonts/main/Fonts/38b5004a-00f0-4ad8-a6f6-4c8fe48b074b.woff2" type="font/woff2" crossorigin />
+<link rel="preload" as="font" href="/themes/custom/hrw_design/dist/app-drupal/assets/fonts/main/Fonts/32a02776-64bf-464c-9c4f-4f57df3d72d6.woff2" type="font/woff2" crossorigin />
+<link rel="preload" as="font" href="/themes/custom/hrw_design/dist/app-drupal/assets/fonts/main/Fonts/b273cf7b-f375-4188-9216-9101312446b2.woff2" type="font/woff2" crossorigin />
+<link rel="preload" as="image" href="/sites/default/files/styles/480w/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?itok=sL9EvDc6" fetchpriority="high" />
+
+    <title>日本法院推翻跨性别者强制绝育规定 | Human Rights Watch</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_2Nvs2I-Ii_ikng_uO-eGfYeG0CEemrutA3GFI-iT9W4.css?delta=0&amp;language=zh-hans&amp;theme=hrw_design&amp;include=eJxVUFGywjAIvFA0R8rQZLU8E1IDrfb2L1Y71h-GXXZ3gERGmVY0P2CkhWtTN7ZHiFUUYv7QO13VUPxAik2ToHwV_3ef0daNuXA2NPUNOnUTLwhGQ4Ye9bG2X__8NJpqD31N9jg8LbPcfGrzRPn8gUffpYqFzBF9u1CIxamRsRpH3W1f5h1eJcIVFi6Ug47UqQ86bcgtjIf6rZ5LTXOGex_lI03GVVz_BNsaUAaknfwHkDuAtw" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_6KTYkKwBsrcItY5qtBWjDeoSoo1jXqCJWqQjthyyBzQ.css?delta=1&amp;language=zh-hans&amp;theme=hrw_design&amp;include=eJxVUFGywjAIvFA0R8rQZLU8E1IDrfb2L1Y71h-GXXZ3gERGmVY0P2CkhWtTN7ZHiFUUYv7QO13VUPxAik2ToHwV_3ef0daNuXA2NPUNOnUTLwhGQ4Ye9bG2X__8NJpqD31N9jg8LbPcfGrzRPn8gUffpYqFzBF9u1CIxamRsRpH3W1f5h1eJcIVFi6Ug47UqQ86bcgtjIf6rZ5LTXOGex_lI03GVVz_BNsaUAaknfwHkDuAtw" />
+<link rel="stylesheet" media="print" href="//fast.fonts.net/t/1.css?apiType=css&amp;projectid=b0af8052-798a-4f60-9b66-62993aa79ad2" />
+
+    
+  </head>
+  <body class="ltr">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5D7ZP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="page page--node--news">
+      <header>
+            <a href="#hrw-cookie-dialog" id="hrw-cookie-popup-skip-link" class="visually-hidden focusable" aria-hidden="true" tabindex="-1">
+        Skip to cookie privacy notice
+      </a>
+      <a href="#main-content" class="visually-hidden focusable">
+        Skip to main content
+      </a>
+        <div>
+    
+<div id="block-donationcalloutheaderbar">
+	
+		
+
+                  
+</div>
+
+
+  </div>
+
+
+                <div>
+          
+<div class="header-bar flex w-full justify-center relative z-30">
+  <span class="bg-gray-900 absolute h-16 w-full z-n10"></span>
+  <div class="header-bar__container flex w-lg mt-4">
+    <div class="header-bar__logo block absolute z-10 w-14 h-14 xl:w-24 xl:h-24 xl:relative flex-shrink-0">
+       <a href="/zh-hans">         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="xMinYMin" class="max-w-full"><title>Human Rights Watch</title><path fill="#0071CE" d="M0 700h700V0H0z"/><path fill="#fff" d="M177 232v-56h-12v22h-16v-22h-11v56h11v-25h16v25zm94-18v-38h-12v41c0 4-3 6-8 6-4 0-7-1-8-4l-1-6v-37h-11v39c0 5 0 7 2 10 3 5 9 8 18 8 12 0 18-6 19-11l1-8zm110 18l-5-56h-14l-8 28-2 9-2-9-7-28h-15l-5 56h11l2-29 1-11 2 10 8 30h10l8-31 3-8v9l2 30h11zm94 0l-17-56h-12l-19 56h12l4-13h16l4 13h12zm-18-23h-11l3-10 2-11 3 10 3 11zm105 23v-56h-11l1 23 1 15-7-16-10-22h-13v56h11v-24l-1-16 8 18 9 22h12zM178 380l-13-22-2-3c7 0 12-7 12-15 0-10-6-17-16-17h-21v57h11v-24l2 1c2 1 3 3 9 13l5 10h13zm-15-40c0 3 0 5-2 6-1 1-3 2-8 2h-4v-15h10c3 1 4 4 4 7zm70 40v-57h-12v57zm88-5v-27h-22l2 10h8v12l-6 2c-4 0-7-1-9-3-3-3-4-8-4-16 0-9 1-15 5-18 2-2 4-3 8-3s8 1 11 4l6-7c-4-4-11-6-17-6s-10 1-14 4c-8 5-12 13-12 25 0 8 2 14 6 20 5 5 11 8 19 8 7 0 13-1 19-5zm85 5v-57h-11v22h-16v-22h-12v57h12v-25h16v25zm83-57h-41v10h14v47h12v-47h13zm78 39c0-8-5-14-14-17l-7-2c-5-1-6-2-6-5 0-4 3-7 8-7 4 0 8 1 13 5l5-9c-5-3-12-5-19-5-12 0-20 7-20 17l3 9c2 3 5 5 11 7l6 1c5 2 7 4 7 8 0 5-3 7-10 7-5 0-10-1-15-4l-4 9c5 3 13 5 19 5 14 0 23-8 23-19zM199 471h-12l-4 21-3 19-3-15-5-25h-12l-5 23-3 18-3-19-5-22h-12l14 57h12l5-23 3-16 2 16 5 23h13l13-57zm95 56l-17-56h-13l-18 56h12l4-13h16l4 13h12zm-19-22h-10a160 160 0 005-22 1386 1386 0 015 22zm103-34h-40v10h14v46h11v-46h13zm90 52l-5-7c-4 3-7 3-10 3-5 0-8-2-11-6-1-3-2-7-2-15 0-6 1-11 3-14s6-5 10-5l9 3 5-8c-3-2-9-4-15-4-9 0-17 5-21 13-3 5-4 10-4 17 0 9 2 15 7 20 5 6 11 8 18 8s11-1 16-5zm94 4v-56h-11v22h-16v-22h-12v56h12v-25h16v25z"/></svg>
+       </a>     </div>
+    <div class="header-bar__content flex flex-col w-full">
+      <div class="header-bar__content-inner flex justify-end w-full xl:justify-between xl:pl-6 bg-gray-900 text-white">
+      <button title="The main menu" aria-label="Open the main menu" aria-expanded="false"
+              data-toggle-label="Close the main menu"
+              class="header-bar__toggle my-2 ml-16 pl-2 pr-2 flex border-r border-gray-800 xl:hidden">
+        <div class="toggle-menu">
+          
+
+
+
+<div class="icon fill-current  w-6 block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-header-menu"></use>
+  </svg>
+</div>
+        </div>
+        <div class="toggle-close rotate-away">
+          
+
+
+
+<div class="icon fill-current  w-6 block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-header-cross"></use>
+  </svg>
+</div>
+        </div>
+      </button>
+        <div class="header-bar__language hidden xl:inline-flex items-center">
+          
+
+
+
+  <nav aria-label="语言" class="translations-bar items-baseline inline-flex flex-wrap ">
+    <ul class="translations-bar__languages-list inline-flex flex-wrap ">
+          <li class="translations-bar__language">
+                  <a href="/ar"
+             title="Arabic"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="ar" lang="ar">
+            العربية
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                <span
+           class=" font-sans text-xs lg:text-sm px-1 x2l:px-2 active underline text-gray-400"
+           xml:lang="zh-hans" lang="zh-hans">
+          简中
+        </span>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/zh-hant/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization"
+             title="Chinese Traditional"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="zh-hant" lang="zh-hant">
+            繁中
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization"
+             title="English"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="en" lang="en">
+            English
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/fr"
+             title="French"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="fr" lang="fr">
+            Français
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/de"
+             title="German"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="de" lang="de">
+            Deutsch
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/ja"
+             title="Japanese"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="ja" lang="ja">
+            日本語
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/ru"
+             title="Russian"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="ru" lang="ru">
+            Русский
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/pt"
+             title="Portugese"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="pt" lang="pt">
+            Português
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/es"
+             title="Spanish"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white"
+             xml:lang="es" lang="es">
+            Español
+          </a>
+        
+      </li>
+              <li class="translations-bar__language">
+        <a href="/zh-hans/languages?language=zh-hans"
+           title="More"
+           class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-gray-400 hover-focus:text-white">
+          More <span class='sr-only'>languages</span>
+          
+
+
+
+<div class="icon fill-current  w-4 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-plus"></use>
+  </svg>
+</div>
+        </a>
+      </li>
+      </ul>
+</nav>
+
+
+        </div>
+        <div class="header-bar__utilities flex flex-col-reverse w-full xl:w-auto xl:flex-row xl:items-center">
+          <div class="header-bar__search hidden xl:p-0 xl:mr-2 xl:flex">
+                          <div class="search-input">
+      <form class="search-form" action="/zh-hans/sitesearch" method="get"
+          id="search_form_1698936686" accept-charset="UTF-8">
+      <div class="flex">
+        <div class="form-item form-type-textfield inline-block flex-grow">
+          <label class="sr-only text-white" for="apachesolr_panels_search_form_520021816">搜寻</label>
+          <input title="Enter the terms you wish to search for."
+                 type="text"
+                 id="apachesolr_panels_search_form_520021816"
+                 name="search"
+                 value=""
+                 size="15"
+                 maxlength="128"
+                 class="form-text relative bg-gray-700 text-white h-8 py-1 px-2 text-sm font-light w-full">
+        </div>
+        <button type="submit" value="Search" title="搜寻" class="form-submit inline-flex justify-center h-8 w-8 bg-gray-900 hover-focus:bg-black text-white xl:bg-gray-800">
+          
+
+
+
+<div class="icon fill-current self-center w-4 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-search"></use>
+  </svg>
+</div>
+        </button>
+      </div>
+    </form>
+  </div>
+                      </div>
+          <div class="header-bar__cta flex justify-end xl:block">
+                          
+
+
+
+
+
+
+<a   class="uppercase btn btn-secondary btn-lg  h-12 font-bold w-full" href=https://donate.hrw.org/page/107245/donate/1?ea.tracking.id=EP2022EVpgdonate&amp;promo_id=1000>
+        <span class="btn-text ">捐款赞助</span>
+  </a>
+                      </div>
+        </div>
+      </div>
+      <div class="header-bar__nav flex mobile-hide-position flex-col max-h-0 overflow-hidden transition justify-start xl:flex-row xl:overflow-visible xl:max-h-full">
+        <div class="header-bar__search-mobile px-6 pt-6 bg-gray-800 xl:hidden">
+                      <div class="search-input">
+      <form class="search-form" action="/zh-hans/sitesearch" method="get"
+          id="search_form_2044098506" accept-charset="UTF-8">
+      <div class="flex">
+        <div class="form-item form-type-textfield inline-block flex-grow">
+          <label class="sr-only text-white" for="apachesolr_panels_search_form_1232049806">搜寻</label>
+          <input title="Enter the terms you wish to search for."
+                 type="text"
+                 id="apachesolr_panels_search_form_1232049806"
+                 name="search"
+                 value=""
+                 size="15"
+                 maxlength="128"
+                 class="form-text relative bg-gray-700 text-white h-8 py-1 px-2 text-sm font-light w-full">
+        </div>
+        <button type="submit" value="Search" title="搜寻" class="form-submit inline-flex justify-center h-8 w-8 bg-gray-900 hover-focus:bg-black text-white xl:bg-gray-800">
+          
+
+
+
+<div class="icon fill-current self-center w-4 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-search"></use>
+  </svg>
+</div>
+        </button>
+      </div>
+    </form>
+  </div>
+                  </div>
+                  <div class="header-bar__nav-wrapper w-full xl:pt-1 xl:pl-5">
+            
+<noscript>
+  <header class="w-full">
+    <div class="nav-desktop">
+              <div class="nav-desktop__content flex w-full justify-start">
+          <ul role="tablist" class="nav-desktop__primary flex flex-row flex-wrap flex-grow mb-4 relative list-none p-0 border-b border-gray-200">
+                          <li itemid="" role="tab" class="nav-desktop__menu-item items-baseline p-0 relative separator-bar-absolute">
+                <div class="menu-item__item-content py-2 xl:p-1 x2l:px-3 x3l:px-5 bg-white text-blue-700 text-xl font-light relative hover:text-white hover-focus:bg-blue-700">
+                  <a href="/zh-hans/countries">国家</a>
+                </div>
+              </li>
+                          <li itemid="" role="tab" class="nav-desktop__menu-item items-baseline p-0 relative separator-bar-absolute">
+                <div class="menu-item__item-content py-2 xl:p-1 x2l:px-3 x3l:px-5 bg-white text-blue-700 text-xl font-light relative hover:text-white hover-focus:bg-blue-700">
+                  <a href="/zh-hans/topic/womens-rights">主题</a>
+                </div>
+              </li>
+                          <li itemid="" role="tab" class="nav-desktop__menu-item items-baseline p-0 relative separator-bar-absolute">
+                <div class="menu-item__item-content py-2 xl:p-1 x2l:px-3 x3l:px-5 bg-white text-blue-700 text-xl font-light relative hover:text-white hover-focus:bg-blue-700">
+                  <a href="/zh-hans/publications">报告</a>
+                </div>
+              </li>
+                          <li itemid="" role="tab" class="nav-desktop__menu-item items-baseline p-0 relative separator-bar-absolute">
+                <div class="menu-item__item-content py-2 xl:p-1 x2l:px-3 x3l:px-5 bg-white text-blue-700 text-xl font-light relative hover:text-white hover-focus:bg-blue-700">
+                  <a href="/zh-hans/video-photos">录像&amp;相片</a>
+                </div>
+              </li>
+                          <li itemid="" role="tab" class="nav-desktop__menu-item items-baseline p-0 relative separator-bar-absolute">
+                <div class="menu-item__item-content py-2 xl:p-1 x2l:px-3 x3l:px-5 bg-white text-blue-700 text-xl font-light relative hover:text-white hover-focus:bg-blue-700">
+                  <a href="/zh-hans/node/378413">影响</a>
+                </div>
+              </li>
+                          <li itemid="" role="tab" class="nav-desktop__menu-item items-baseline p-0 relative separator-bar-absolute">
+                <div class="menu-item__item-content py-2 xl:p-1 x2l:px-3 x3l:px-5 bg-white text-blue-700 text-xl font-light relative hover:text-white hover-focus:bg-blue-700">
+                  <a href="/zh-hans/about/about-us">关于</a>
+                </div>
+              </li>
+                      </ul>
+        </div>
+                </div>
+  </header>
+</noscript>
+            
+<div id="vue-header"></div>
+          </div>
+                <div class="header-bar__language-mobile inline-flex items-center pl-4 pt-6 bg-white transition xl:hidden">
+          
+
+
+
+  <nav aria-label="语言" class="translations-bar items-baseline inline-flex flex-wrap ">
+    <ul class="translations-bar__languages-list inline-flex flex-wrap ">
+          <li class="translations-bar__language">
+                  <a href="/ar"
+             title="Arabic"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="ar" lang="ar">
+            العربية
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                <span
+           class=" font-sans text-xs lg:text-sm px-1 x2l:px-2 active underline text-gray-800"
+           xml:lang="zh-hans" lang="zh-hans">
+          简中
+        </span>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/zh-hant/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization"
+             title="Chinese Traditional"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="zh-hant" lang="zh-hant">
+            繁中
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization"
+             title="English"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="en" lang="en">
+            English
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/fr"
+             title="French"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="fr" lang="fr">
+            Français
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/de"
+             title="German"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="de" lang="de">
+            Deutsch
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/ja"
+             title="Japanese"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="ja" lang="ja">
+            日本語
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/ru"
+             title="Russian"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="ru" lang="ru">
+            Русский
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/pt"
+             title="Portugese"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="pt" lang="pt">
+            Português
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/es"
+             title="Spanish"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="es" lang="es">
+            Español
+          </a>
+        
+      </li>
+              <li class="translations-bar__language">
+        <a href="/zh-hans/languages?language=zh-hans"
+           title="More"
+           class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800">
+          More <span class='sr-only'>languages</span>
+          
+
+
+
+<div class="icon fill-current  w-4 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-plus"></use>
+  </svg>
+</div>
+        </a>
+      </li>
+      </ul>
+</nav>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+
+          </header>
+    <main class="main" role="main">
+    <a id="main-content" tabindex="-1"></a>    
+    
+      <div>
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-hrw-design-content">
+  
+    
+      
+
+
+
+<div class="multi-header-bar fixed top-0 left-0 h-12 sticky-header scroll-fade transition hidden xl:flex w-full justify-center z-20">
+  <span class="multi-header-bar__runner bg-white h-12 absolute w-full z-1"></span>
+  <div class="multi-header-bar__container flex w-lg">
+    <div class="multi-header-bar__logo block absolute z-10 w-14 h-14">
+      <a href="/zh-hans">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" preserveAspectRatio="xMinYMin" class="max-w-full"><title>Human Rights Watch</title><path fill="#0071CE" d="M0 700h700V0H0z"/><path fill="#fff" d="M177 232v-56h-12v22h-16v-22h-11v56h11v-25h16v25zm94-18v-38h-12v41c0 4-3 6-8 6-4 0-7-1-8-4l-1-6v-37h-11v39c0 5 0 7 2 10 3 5 9 8 18 8 12 0 18-6 19-11l1-8zm110 18l-5-56h-14l-8 28-2 9-2-9-7-28h-15l-5 56h11l2-29 1-11 2 10 8 30h10l8-31 3-8v9l2 30h11zm94 0l-17-56h-12l-19 56h12l4-13h16l4 13h12zm-18-23h-11l3-10 2-11 3 10 3 11zm105 23v-56h-11l1 23 1 15-7-16-10-22h-13v56h11v-24l-1-16 8 18 9 22h12zM178 380l-13-22-2-3c7 0 12-7 12-15 0-10-6-17-16-17h-21v57h11v-24l2 1c2 1 3 3 9 13l5 10h13zm-15-40c0 3 0 5-2 6-1 1-3 2-8 2h-4v-15h10c3 1 4 4 4 7zm70 40v-57h-12v57zm88-5v-27h-22l2 10h8v12l-6 2c-4 0-7-1-9-3-3-3-4-8-4-16 0-9 1-15 5-18 2-2 4-3 8-3s8 1 11 4l6-7c-4-4-11-6-17-6s-10 1-14 4c-8 5-12 13-12 25 0 8 2 14 6 20 5 5 11 8 19 8 7 0 13-1 19-5zm85 5v-57h-11v22h-16v-22h-12v57h12v-25h16v25zm83-57h-41v10h14v47h12v-47h13zm78 39c0-8-5-14-14-17l-7-2c-5-1-6-2-6-5 0-4 3-7 8-7 4 0 8 1 13 5l5-9c-5-3-12-5-19-5-12 0-20 7-20 17l3 9c2 3 5 5 11 7l6 1c5 2 7 4 7 8 0 5-3 7-10 7-5 0-10-1-15-4l-4 9c5 3 13 5 19 5 14 0 23-8 23-19zM199 471h-12l-4 21-3 19-3-15-5-25h-12l-5 23-3 18-3-19-5-22h-12l14 57h12l5-23 3-16 2 16 5 23h13l13-57zm95 56l-17-56h-13l-18 56h12l4-13h16l4 13h12zm-19-22h-10a160 160 0 005-22 1386 1386 0 015 22zm103-34h-40v10h14v46h11v-46h13zm90 52l-5-7c-4 3-7 3-10 3-5 0-8-2-11-6-1-3-2-7-2-15 0-6 1-11 3-14s6-5 10-5l9 3 5-8c-3-2-9-4-15-4-9 0-17 5-21 13-3 5-4 10-4 17 0 9 2 15 7 20 5 6 11 8 18 8s11-1 16-5zm94 4v-56h-11v22h-16v-22h-12v56h12v-25h16v25z"/></svg>
+      </a>
+    </div>
+    <div class="multi-header-bar__content flex w-full">
+                    <div class="multi-header-bar__title-wrapper   ml-16  grid items-center text-gray-800 font-bold text-sm font-sans-main pl-2 z-1">
+          <h2 class="multi-header-bar__title z-1 truncate"></h2>
+        </div>
+            <div class="multi-header-bar__utilities flex  ">
+                                  <div class="multi-header-bar__print relative items-center lg:flex z-10">
+            <a href="/zh-hans/node/386238/printable/print" class="download-item-title pl-2 text-sm text-gray-800 font-bold font-sans-main">
+              <button class="multi-header-bar__print-button flex hover:bg-gray-200 border-gray-400 border items-center leading-snug my-1 h-8 px-2 ">
+                Print
+                
+
+
+
+<div class="icon fill-current  w-6 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-print"></use>
+  </svg>
+</div>
+              </button>
+            </a>
+          </div>
+                                  <div class="multi-header-bar__cta z-1">
+                          
+
+
+
+
+
+
+<a   class="uppercase btn btn-secondary btn-lg-sm h-12 text-sm md:text-lg lg:font-bold" href=https://donate.hrw.org/page/107245/donate/1?ea.tracking.id=EP2022EVpgdonate&amp;promo_id=1000>
+        <span class="btn-text ">捐款赞助</span>
+  </a>
+                      </div>
+              </div>
+    </div>
+  </div>
+</div>
+
+<article>
+  <div>
+      
+
+
+
+<div class="container-large max-w-lg mx-auto px-6 sm:px-8 md:pr-14 md:pl-24 x2l:px-0 x2l:mx-32 x3l:mx-auto">
+  
+        
+                  <div >
+            <div>
+  
+    
+      
+        
+
+
+<header class="news-header max-w-lg mt-6 md:mt-0 mb-4 sm:mb-6 md:mb-12">
+  <div class="news-header__info mb-5 pb-3 flex flex-col justify-between items-baseline lg:flex-row border-gray-200 lg:flex-row lg:border-b">
+    <div class="news-header__dateline pb-2 flex flex-row text-gray-700 items-baseline border-b border-gray-200 w-full lg:w-auto lg:border-0 lg:pb-0">
+      <time class="news-header__dateline-date flex font-sans text-base lg:text-base"
+            datetime="2023-10-16T00:00:00-0400">2023年 10月 16日 12:00AM EDT</time>
+          </div>
+          
+
+
+
+  <nav aria-label="语言选项" class="translations-bar items-baseline inline-flex flex-wrap ">
+      <span class="font-sans text-xs lg:text-sm font-bold pr-2 text-gray-800 ">
+      语言选项
+    </span>
+    <ul class="translations-bar__languages-list inline-flex flex-wrap ">
+          <li class="translations-bar__language">
+                  <a href="/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization"
+             title="English"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="en" lang="en">
+            English
+          </a>
+        
+      </li>
+          <li class="translations-bar__language">
+                <span
+           class=" font-sans text-xs lg:text-sm px-1 x2l:px-2 active underline text-gray-800"
+           xml:lang="zh-hans" lang="zh-hans">
+          简体中文
+        </span>
+        
+      </li>
+          <li class="translations-bar__language">
+                  <a href="/zh-hant/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization"
+             title="Chinese, Traditional"
+             class="language-link font-sans text-xs lg:text-sm px-1 x2l:px-2 hover-focus:underline text-blue-700 hover-focus:text-blue-800"
+             xml:lang="zh-hant" lang="zh-hant">
+            繁體中文
+          </a>
+        
+      </li>
+          </ul>
+</nav>
+
+
+      </div>
+
+  <div class="news-header__main text-gray-800">
+    <h1 class="news-header__title text-2xl font-medium leading-tight break-words md:text-4xl lg:text-5xl xl:text-6xl ">日本法院推翻跨性别者强制绝育规定</h1>
+    <p class="news-header__subtitle text-base md:text-2xl ">以完成手术为要件被裁定违宪</p>
+  </div>
+
+  
+      
+
+
+<div class="byline__container mt-3 flex flex-wrap text-gray-800 flex-col">
+      <div class="byline__content flex flex-row ml-1 mb-1 mt-4">
+              <div class="byline__img flex h-16 w-16 min-w-16 mr-4">
+                      
+      <img src="/sites/default/files/styles/square_100/public/multimedia_images_2016/kanae_doi_profile_photo_black_small.jpg?itok=HwR11IOY" alt="" loading="lazy"  class="unloaded"  width="100"  height="100" />
+          </div>
+      
+      <div class="byline__info flex-col pr-16">
+        <div class="byline__name flex">
+                      <a class="text-lg font-semibold leading-snug hover:underline focus:underline leading-none" href="/zh-hans/about/people/222383">土井香苗</a>
+                            </div>
+
+        <div class="byline__position text-sm pt-1 leading-tight">日本分部主任</div>
+
+                  <a class="byline__icon text-blue-700 flex items-center mt-1 text-sm leading-tight hover:underline focus:underline" href="https://twitter.com/kanaedoi">
+            
+
+
+
+<div class="icon fill-current  w-5 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-twitter"></use>
+  </svg>
+</div>
+            <span class="sr-only">@kanaedoi</span>
+            <p class="byline__handle font-bold">@kanaedoi</p>
+          </a>
+              </div>
+    </div>
+      <div class="byline__content flex flex-row ml-1 mb-1 mt-4">
+              <div class="byline__img flex h-16 w-16 min-w-16 mr-4">
+                      
+      <img src="/sites/default/files/styles/square_100/public/multimedia_images_2015/2015_kyle-knight_03_web-bio.jpg?itok=jThOuX1l" alt="" loading="lazy"  class="unloaded"  width="100"  height="100" />
+          </div>
+      
+      <div class="byline__info flex-col pr-16">
+        <div class="byline__name flex">
+                      <a class="text-lg font-semibold leading-snug hover:underline focus:underline leading-none" href="/zh-hans/about/people/260704">凯尔・奈特</a>
+                            </div>
+
+        <div class="byline__position text-sm pt-1 leading-tight">女同性恋、男同性恋、双性恋和跨性别权利专案高级研究员</div>
+
+                  <a class="byline__icon text-blue-700 flex items-center mt-1 text-sm leading-tight hover:underline focus:underline" href="https://twitter.com/knightktm">
+            
+
+
+
+<div class="icon fill-current  w-5 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-twitter"></use>
+  </svg>
+</div>
+            <span class="sr-only">knightktm</span>
+            <p class="byline__handle font-bold">knightktm</p>
+          </a>
+              </div>
+    </div>
+    </div>
+  
+          <div class="hrw-share hrw-share--gray flex lg:hidden"><p class="minimal-share"><a href="https://www.facebook.com/sharer.php?u=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via Facebook" class="facebook ms-icon" data-ms="facebook">
+      <span class="sr-only">Share this via Facebook</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 571.4 1000" role="img" focusable="false" aria-hidden="true"><path d="M535.2 6.7V154h-87.7q-47.9 0-64.7 20.1t-16.7 60.3v105.4h163.5L507.8 505H366.1v423.6H195.3V505H53V339.8h142.3V218.2q0-103.8 58-161T407.9 0Q490 0 535.2 6.7z" /></svg>
+
+</a>
+<a href="https://twitter.com/intent/tweet?text=日本法院推翻跨性别者强制绝育规定&amp;url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via Twitter" class="twitter ms-icon" data-ms="twitter">
+      <span class="sr-only">Share this via Twitter</span>
+  <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.374-1.337.647-2.085.794-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.415-.02-.616-.058.418 1.304 1.63 2.253 3.067 2.28-1.123.88-2.54 1.404-4.076 1.404-.265 0-.526-.015-.783-.045 1.454.93 3.18 1.474 5.033 1.474 6.038 0 9.34-5 9.34-9.337 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero" /></svg>
+</a>
+<a href="whatsapp://send?text=日本法院推翻跨性别者强制绝育规定%20-%20https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via WhatsApp" class="whatsapp ms-icon" data-ms="whatsapp">
+      <span class="sr-only">Share this via WhatsApp</span>
+  <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M11.665 9.588c-.2-.1-1.177-.578-1.36-.644-.182-.067-.315-.1-.448.1-.132.197-.514.643-.63.775-.116.13-.232.147-.43.05-.2-.1-.842-.31-1.602-.985-.592-.525-.99-1.174-1.107-1.373-.116-.198-.013-.305.087-.404.09-.09.2-.232.3-.348.098-.116.13-.198.198-.33.066-.133.033-.248-.017-.348-.05-.1-.448-1.074-.614-1.47-.16-.387-.325-.334-.448-.34-.115-.006-.248-.007-.38-.007-.134 0-.35.05-.532.247-.182.2-.696.678-.696 1.653s.713 1.917.812 2.05c.1.132 1.404 2.133 3.4 2.99.476.205.846.327 1.136.418.476.15.91.13 1.253.08.383-.058 1.178-.48 1.344-.943.168-.463.168-.86.118-.943-.05-.083-.182-.133-.382-.232M8.034 14.52H8.03c-1.187 0-2.353-.318-3.37-.918l-.24-.143-2.507.653.67-2.43-.16-.25c-.662-1.05-1.012-2.263-1.01-3.508 0-3.633 2.97-6.59 6.623-6.59 1.77.002 3.43.688 4.68 1.934 1.252 1.244 1.94 2.9 1.94 4.66-.003 3.634-2.973 6.59-6.623 6.59m5.636-12.2C12.163.83 10.163.003 8.03 0 3.642 0 .07 3.556.067 7.928c0 1.397.366 2.76 1.063 3.964L0 16l4.223-1.102c1.164.63 2.474.964 3.807.965h.004c4.39 0 7.964-3.557 7.966-7.93 0-2.117-.827-4.11-2.33-5.608" /></svg>
+
+</a>
+<a href="mailto:?subject=日本法院推翻跨性别者强制绝育规定&amp;body=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via Email" class="email ms-icon" data-ms="email">
+      <span class="sr-only">Share this via Email</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 33 32" role="img" focusable="false" aria-hidden="true"><path d="M.064 24.032V5.6q0-.032.096-.608l10.848 9.28-10.816 10.4q-.128-.448-.128-.64zm1.44-20.32q.224-.096.544-.096h29.216q.288 0 .576.096l-10.88 9.312-1.44 1.152-2.848 2.336-2.848-2.336-1.44-1.152zm.032 22.208l10.912-10.464 4.224 3.424 4.224-3.424L31.808 25.92q-.256.096-.544.096H2.048q-.256 0-.512-.096zm20.8-11.648l10.816-9.28q.096.288.096.608v18.432q0 .288-.096.64z" /></svg>
+
+</a>
+<a href="" title="Share this via Share" class="share ms-icon" data-ms="share">
+      <span class="sr-only">Other ways to share</span>
+  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px" role="img" focusable="false" aria-hidden="true"><path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z" /></svg>
+
+</a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization&amp;title=日本法院推翻跨性别者强制绝育规定" title="Share this via LinkedIn" class="linkedin ms-icon" data-ms="linkedin">
+      <span class="sr-only">Share this via LinkedIn</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 857.1 1000" role="img" focusable="false" aria-hidden="true"><path d="M194.8 348.8v553H10.6v-553h184.2zM206.5 178q.5 40.8-28.2 68.1t-75.6 27.3h-1.1q-45.8 0-73.7-27.3T0 178q0-41.3 28.7-68.3t75.1-27.1 74.2 27.1 28.5 68.3zm650.6 406.8v317H673.5V606q0-58.6-22.6-91.8T580.4 481q-35.2 0-58.9 19.3T486 548q-6.1 16.7-6.1 45.2v308.6H296.3q1.1-222.7 1.1-361.1t-.5-165.1l-.6-26.8h183.6v80.3h-1.1q11.2-17.8 22.9-31.2t31.5-29 48.6-24.3 63.8-8.7q95.5 0 153.5 63.4t58 185.5z" /></svg>
+
+</a>
+<a href="http://reddit.com/submit?url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization&amp;title=日本法院推翻跨性别者强制绝育规定" title="Share this via Reddit" class="reddit ms-icon" data-ms="reddit">
+      <span class="sr-only">Share this via Reddit</span>
+  <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px" role="img" focusable="false" aria-hidden="true"><path d="M 17.662109 2 C 15.565005 2 14 3.7131367 14 5.6621094 L 14 9.0351562 C 11.24971 9.1810926 8.7344872 9.9143634 6.7265625 11.064453 C 5.9527826 10.321405 4.9166871 9.991448 3.9121094 9.9921875 C 2.8229214 9.9929893 1.7094525 10.370413 0.94140625 11.234375 L 0.92382812 11.253906 L 0.90625 11.273438 C 0.16947928 12.194228 -0.12225605 13.427747 0.07421875 14.652344 C 0.25365009 15.770711 0.90137168 16.893419 2.0273438 17.628906 C 2.0199689 17.753058 2 17.874618 2 18 C 2 22.962 7.832 27 15 27 C 22.168 27 28 22.962 28 18 C 28 17.874618 27.980031 17.753058 27.972656 17.628906 C 29.098628 16.893419 29.74635 15.770711 29.925781 14.652344 C 30.122256 13.427747 29.830521 12.194228 29.09375 11.273438 L 29.076172 11.253906 L 29.058594 11.234375 C 28.290448 10.370294 27.177168 9.9929893 26.087891 9.9921875 C 25.08323 9.991448 24.046988 10.321133 23.273438 11.064453 C 21.265513 9.9143634 18.75029 9.1810926 16 9.0351562 L 16 5.6621094 C 16 4.6830821 16.565214 4 17.662109 4 C 18.182797 4 18.817104 4.2609042 19.810547 4.609375 C 20.650361 4.9039572 21.743308 5.2016984 23.140625 5.2910156 C 23.474875 6.2790874 24.402814 7 25.5 7 C 26.875 7 28 5.875 28 4.5 C 28 3.125 26.875 2 25.5 2 C 24.561213 2 23.747538 2.5304211 23.320312 3.3007812 C 22.125831 3.2346294 21.248238 2.9947078 20.472656 2.7226562 C 19.568849 2.4056271 18.738422 2 17.662109 2 z M 3.9121094 11.992188 C 4.3072494 11.991896 4.6826692 12.095595 4.9921875 12.263672 C 3.8881963 13.18517 3.0505713 14.261821 2.5449219 15.4375 C 2.2764358 15.106087 2.114647 14.734002 2.0507812 14.335938 C 1.9430146 13.664243 2.1440212 12.966045 2.4628906 12.552734 C 2.7642172 12.228395 3.3144613 11.992626 3.9121094 11.992188 z M 26.085938 11.992188 C 26.683756 11.992627 27.235874 12.22849 27.537109 12.552734 C 27.855979 12.966045 28.056985 13.664243 27.949219 14.335938 C 27.885353 14.734002 27.723564 15.106087 27.455078 15.4375 C 26.949429 14.261821 26.111804 13.18517 25.007812 12.263672 C 25.316626 12.095792 25.690955 11.991896 26.085938 11.992188 z M 10 14 C 11.105 14 12 14.895 12 16 C 12 17.105 11.105 18 10 18 C 8.895 18 8 17.105 8 16 C 8 14.895 8.895 14 10 14 z M 20 14 C 21.105 14 22 14.895 22 16 C 22 17.105 21.105 18 20 18 C 18.895 18 18 17.105 18 16 C 18 14.895 18.895 14 20 14 z M 20.238281 19.533203 C 19.599281 21.400203 17.556 23 15 23 C 12.444 23 10.400719 21.400969 9.7617188 19.667969 C 10.911719 20.600969 12.828 21.267578 15 21.267578 C 17.172 21.267578 19.088281 20.600203 20.238281 19.533203 z" /></svg>
+
+</a>
+<a href="https://telegram.me/share/url?url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization&amp;text=日本法院推翻跨性别者强制绝育规定" title="Share this via Telegram" class="telegram ms-icon" data-ms="telegram">
+      <span class="sr-only">Share this via Telegram</span>
+  <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24px" height="24px" role="img" focusable="false" aria-hidden="true"><path d="M 19.976562 3.1210938 L 19.611328 3.2695312 C 19.611328 3.2695312 6.6375504 8.5740484 2.6132812 10.267578 L 2.0019531 10.525391 L 2.0019531 12.779297 L 6.9472656 14.755859 L 8.6796875 19.996094 L 10.251953 20.005859 L 12.955078 17.720703 L 16.355469 20.996094 L 18.808594 20.996094 L 21.964844 3.875 L 19.976562 3.1210938 z M 19.646484 5.4179688 L 17.146484 18.980469 L 13.044922 15.029297 L 10.224609 17.410156 L 11 14.375 L 17.28125 8 L 17.082031 7.7988281 C 17.082031 7.7988281 10.706702 11.473998 8.0019531 13.023438 L 4.5371094 11.638672 C 9.0770415 9.7455758 18.697943 5.8058761 19.646484 5.4179688 z" /></svg>
+
+</a>
+<a href="/zh-hans/node/386238/printable/print" title="Share this via Printer" class="printer ms-icon" data-ms="printer">
+      <span class="sr-only">Share this via Printer</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 924 1000" role="img" focusable="false" aria-hidden="true"><path d="M0 900V567l116-129h85v64h-56l-80 89v245h795V591l-80-89h-56v-64h85l115 129v333H0zm201-319V251l151-151h372v481H201zm60-61h403V160H412v151H261v209z" /></svg>
+
+</a>
+</p>
+</div>
+    </header>
+
+
+  </div>
+
+
+<div class="mb-8 md:mb-14">
+  
+    
+      
+  </div>
+
+          </div>
+        
+            
+    </div>
+
+    
+    
+  
+
+
+
+<div class="container-large max-w-lg mx-auto px-6 sm:px-8 md:pr-14 md:pl-24 x2l:px-0 x2l:mx-32 x3l:mx-auto">
+                            
+
+
+
+
+
+
+<div class="grid-2-1-content x2l:flex lg:flex mx-auto justify-between ">
+  <div class="grid-2 w-full flex-col  lg:flex lg:w-3/5 lg:px-0 ">
+            <div >
+          
+
+<div class="mb-8 md:mb-14">
+  
+    
+      
+
+<div>
+      <div class="article-body article-body--contained rich-text mx-auto">
+      
+
+
+
+<div class="embed embedded-entity embedded-entity-type-media embedded-entity-bundle-image embedded-entity-viewmode-embeddable">
+      
+
+<div>
+  
+  
+
+
+
+<figure class="figure figure--expand text-center info "><div class="figure__media relative inline-block mx-auto">
+          <a href="/zh-hans/modal/103610" rel="modal:open" class="figure__link">
+                    <img srcset="/sites/default/files/styles/480w/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?itok=sL9EvDc6 480w, /sites/default/files/styles/embed_xxl/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?itok=81_9QKSC 946w" sizes="(max-width: 600px) 480px, 
+946px" width="946" height="688" data-responsive-image-style="embedded_images" src="/sites/default/files/styles/embed_xxl/public/media_2023/10/202310lgbt_asia_japan_gen_suzuki_court_hearing.jpg?itok=81_9QKSC" alt="铃木元（中）赴静冈家事法院滨松分院（静冈家庭裁判所滨松支部）出庭，2022年10月14日。" loading="lazy"><div class="figure__expand absolute block bottom-0 right-0 w-8 h-8 bg-white text-gray-700">
+          <span class="sr-only">Click to expand Image</span>
+          
+
+
+
+<div class="icon fill-current  w-full inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor" role="img" focusable="false" aria-hidden="true"><use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-expand" xmlns:xlink="http://www.w3.org/1999/xlink" /></svg></div>
+        </div>
+                      </a>
+      </div>
+        <figcaption class="figure__info text-left font-serif text-xs md:text-sm lg:text-base mx-auto text-gray-700 mt-1"><span class="figure__caption">铃木元（中）赴静冈家事法院滨松分院（静冈家庭裁判所滨松支部）出庭，2022年10月14日。</span>
+                    <span class="figure__credit">©  2022 Kyodo News via AP Photo </span>
+          </figcaption></figure></div>
+
+  </div>
+<p>日本一所家事法院判决，跨性别人士必须完成绝育手术才能合法变更性别的法律违宪。这件判决创下日本首例，同时<a href="https://www.japantimes.co.jp/news/2023/09/27/japan/crime-legal/supreme-court-transgender-surgery-constitutionality/">日本最高法院</a>正在审理同一议题的另一案件。</p>
+
+<p>2021年，日本跨性别男性铃木元（Gen Suzuki，音译）向法院<a href="https://www.hrw.org/news/2021/10/12/trans-man-fights-japans-sterilization-requirement">提诉</a>，请求不经法律规定的绝育手术而将法定性别变更为男性。静冈家事法院本周作出对他有利判决，法官<a href="https://www3.nhk.or.jp/news/html/20231012/k10014223241000.html">写道</a>：“切除性腺的手术会导致生殖功能丧失这种严重且不可逆的后果。这让人不禁怀疑，考虑到可能造成的社会混乱程度以及从医学角度来看，强制接受这种手术是否欠缺必要性或合理性。”</p>
+
+<p>在日本，跨性别人士若欲合法变更性别，必须向家事法院提出申请。根据《性别认同障碍者特例法》，申请人必须通过精神医学评估，完成绝育手术，而且必须是未育有不满18岁子女的单身人士。</p>
+
+<p>随着法律、医疗及各界学者专家纷纷对现行法律规定<a href="https://www.hrw.org/report/2021/05/25/law-undermines-dignity/momentum-revise-japans-legal-gender-recognition-process">表达异议</a>，日本修改这项法律的动力正在不断增强。<a href="https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=3159">联合国专家</a>和世界跨性别健康专业协会（<a href="https://www.hrw.org/news/2019/06/14/global-call-reform-japans-law-transgender-people">World Professional Association for Transgender Health</a>）都敦促日本消除法律中的歧视成分，对跨性别人士及其家属与其他公民一视同仁。</p>
+
+<p>2019年，日本最高法院<a href="https://www.nbcnews.com/feature/nbc-out/japan-s-supreme-court-upholds-transgender-sterilization-requirement-n962721">维持</a>下级法院的一件判决，认定前述法律并不违宪。不过，其中两位大法官肯定改革确有必要，他们写道：“［跨性别人士］在性别方面所遭遇的痛苦，是一个拥护性别认同多样性的社会同样应当关注的问题。” 最高法院在今年稍早作出的另一件判决则<a href="https://www.courts.go.jp/app/files/hanrei_jp/191/092191_hanrei.pdf">认定</a>，跨性别公务员有权使用符合其性别认同的厕所。这名公务员的雇用单位不准她使用办公室的女厕，就因为她没有接受外科变性手术而无法变更法定性别。</p>
+
+<p>最高法院大法庭正在审理的这宗案件已向大法官们提出要求：请让如此过时而侵犯人权的绝育规定退场。</p>
+    </div>
+  </div>
+
+  </div>
+
+<div>
+  
+    
+
+            
+
+
+<div class="mb-8 md:mb-14">
+      
+<div class="donation-block">
+	<div class="donation-block__content bg-cover bg-top bg-black text-white border-t-4 border-orange-500 md:bg-center">
+    <div class="donation-block__content-inner p-6 background-vert md:background-horz">
+      <div class="donation-block__form-wrapper pt-40 sm:pt-48 md:pt-0 md:w-1/2">
+        <h2 class="donation-block__form-heading mb-6 text-xl sm:text-2xl leading-tight">Your tax deductible gift can help stop human rights violations and save lives around the world.</h2>
+        <form action="https://donate.hrw.org/page/107245/donate/1" id="donation-block__form" class="donation-block__form" method="get">
+          <input type="hidden" name="transaction.recurrpay" value="N" />
+                      <input type="hidden" name="ea.tracking.id" value="EP2022EVpgnewscta" />
+                    <div class="flex flex-wrap">
+                          <div class="donation-block__form-toggle w-1/2 sm:w-1/3 p-px">
+                
+<div class="toggle">
+  <input id="$50" name="Donation Amount" type="radio" value="50" />
+  <label for="$50" class="block relative z-10 w-full py-2 border border-white bg-white text-center text-gray-800 text-xl leading-tight font-bold cursor-pointer sm:text-2xl">$50</label>
+  
+  </div>
+              </div>
+                          <div class="donation-block__form-toggle w-1/2 sm:w-1/3 p-px">
+                
+<div class="toggle">
+  <input id="$100" name="Donation Amount" type="radio" value="100" />
+  <label for="$100" class="block relative z-10 w-full py-2 border border-white bg-white text-center text-gray-800 text-xl leading-tight font-bold cursor-pointer sm:text-2xl">$100</label>
+  
+  </div>
+              </div>
+                          <div class="donation-block__form-toggle w-1/2 sm:w-1/3 p-px">
+                
+<div class="toggle">
+  <input id="$250" name="Donation Amount" type="radio" value="250" />
+  <label for="$250" class="block relative z-10 w-full py-2 border border-white bg-white text-center text-gray-800 text-xl leading-tight font-bold cursor-pointer sm:text-2xl">$250</label>
+  
+  </div>
+              </div>
+                          <div class="donation-block__form-toggle w-1/2 sm:w-1/3 p-px">
+                
+<div class="toggle">
+  <input id="$500" name="Donation Amount" type="radio" value="500" />
+  <label for="$500" class="block relative z-10 w-full py-2 border border-white bg-white text-center text-gray-800 text-xl leading-tight font-bold cursor-pointer sm:text-2xl">$500</label>
+  
+  </div>
+              </div>
+                          <div class="donation-block__form-toggle w-1/2 sm:w-1/3 p-px">
+                
+<div class="toggle">
+  <input id="$1000" name="Donation Amount" type="radio" value="1000" />
+  <label for="$1000" class="block relative z-10 w-full py-2 border border-white bg-white text-center text-gray-800 text-xl leading-tight font-bold cursor-pointer sm:text-2xl">$1000</label>
+  
+  </div>
+              </div>
+                        <div class="donation-block__form-toggle other-input w-1/2 sm:w-1/3 p-px">
+              
+<div class="toggle">
+  <input id="Other" name="Donation Amount" type="radio" value="" />
+  <label for="Other" class="block relative z-10 w-full py-2 border border-white bg-white text-center text-gray-800 text-xl leading-tight font-bold cursor-pointer sm:text-2xl">Other</label>
+                    <label class="other-input-prefix hidden" for="OtherInput">$</label>
+                  <input class="block w-full py-2 border border-gray-200 bg-blue-700 text-white text-center text-xl leading-tight font-bold cursor-pointer sm:text-2xl hidden" id="OtherInput" aria-label="Other amount" type="text" inputmode="numeric" pattern="[0-9]*" />
+                </div>
+            </div>
+          </div>
+          <div class="donation-block__form-action p-px">
+            
+
+
+
+
+    
+
+<button type="submit" value="捐款赞助" class="uppercase btn btn-secondary btn-xl-sm w-full" form=donation-block__form>
+        <span class="btn-text ">捐款赞助</span>
+  </button>
+          </div>
+        </form>
+      </div>
+    </div>
+	</div>
+</div>
+  </div>
+
+      
+</div>
+
+
+<div class="mb-2 md:mb-0">
+  
+    
+      
+
+    
+
+<div>
+  
+<div class="tag-block">
+      <div class="tag-block__region flex flex-wrap">
+      <div class="tag-block__region-title text-gray-800 text-lg flex pr-2">区域／国家</div>
+      <ul class="tag-block__region-list flex flex-wrap">
+                  <li class="tag-block__region-item text-lg text-blue-700 pl-1"><a href="/zh-hans/asia" class="tag-block__region-link">亚洲</a></li>                  <li class="tag-block__region-item text-lg text-blue-700 pl-1"><a href="/zh-hans/asia/japan" class="tag-block__region-link">日本</a></li>              </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+
+<div class="mb-8 md:mb-14">
+  
+    
+      
+
+  
+
+<div>
+  
+<div class="tag-block">
+      <div class="tag-block__region flex flex-wrap">
+      <div class="tag-block__region-title text-gray-800 text-lg flex pr-2">主题</div>
+      <ul class="tag-block__region-list flex flex-wrap">
+                  <li class="tag-block__region-item text-lg text-blue-700 pl-1"><a href="/zh-hans/topic/lgbt-rights" class="tag-block__region-link">LGBT权利</a></li>              </ul>
+    </div>
+  </div>
+</div>
+
+  </div>
+<div>
+  
+    
+      
+
+<div class="related-content mb-8 md:mb-14">
+  
+
+
+
+
+
+<div class="media-list mx-auto flex flex-col">
+      
+
+
+<div class="block-header flex justify-between items-baseline  pb-3 border-b border-gray-200 ">
+  <h2 class="block-header__title font-sans media-list__title text-base font-medium uppercase text-gray-800">
+    更多报导
+  </h2>
+  </div>
+    <div class="media-list__content">
+    <ul class="media-list__list flex flex-wrap ">
+              <li class="media-list__item py-4 w-full md:pr-4 md:w-1/2">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full flex-row-reverse justify-end ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2023-02-13T00:00:00-0500">2023年 02月 13日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          快讯
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2023/02/13/hong-kong-court-rejects-compulsory-surgery-trans-men"><span>香港法院撤销对跨性别男性的强制手术要求</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none mr-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/media_2023/02/202302lgbt_china_hong_kong_transgender_activist_henry_edward_tse.jpg?h=8b7966f8&amp;itok=tQWiIYDb" alt="Transgender activist Henry Edward Tse speaks to reporters outside of Court of Final Appeal in Hong Kong." loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2023/02/13/hong-kong-court-rejects-compulsory-surgery-trans-men" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+              <li class="media-list__item py-4 w-full md:pr-4 md:w-1/2">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full flex-row-reverse justify-end ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2022-08-22T00:00:00-0400">2022年 08月 22日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          快讯
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2022/08/22/singapore-decriminalize-gay-sex"><span>新加坡将除罪同性性行为</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none mr-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/media_2022/08/202208asia_lgbt_singapore_pinkdot.jpg?h=4c4adfbd&amp;itok=gw3MzAkS" alt="Demonstrators hold pro-LGBT signs at a rally" loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2022/08/22/singapore-decriminalize-gay-sex" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+          </ul>
+  </div>
+</div>
+</div>
+
+  </div>
+<div>
+  
+    
+      
+
+<div class="related-report mb-8 md:mb-14">
+  
+
+
+
+
+
+<div class="media-list mx-auto flex flex-col">
+      
+
+
+<div class="block-header flex justify-between items-baseline  pb-3 border-b border-gray-200 ">
+  <h2 class="block-header__title font-sans media-list__title text-base font-medium uppercase text-gray-800">
+    报告
+  </h2>
+  </div>
+    <div class="media-list__content">
+    <ul class="media-list__list flex flex-wrap ">
+              <li class="media-list__item py-4 w-full md:pr-4 md:w-1/2">
+    
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full flex-row-reverse justify-end ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2017-11-15T00:00:00-0500">2017年 11月 15日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          Report
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/report/2017/11/15/311127"><span>“你考虑过父母的幸福吗？”</span>
+</a>
+          </h3>
+          <p class="media-block__subtitle text-gray-700 text-sm">中国对LGBT人士的扭转治疗</p>
+                              </div>
+        <div class="media-block__image relative flex-none mr-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/multimedia_images_2017/201711asia_china_main.jpeg?itok=scLCe6Z2" alt="Main Image for China Report" loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/report/2017/11/15/311127" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+          </ul>
+  </div>
+</div>
+</div>
+
+  </div>
+
+        </div>
+        </div>
+  <div class="grid-1  flex-col  lg:flex lg:w-3/10 lg:px-0 ">
+            <div >
+          <div>
+  
+    
+      
+
+<div class="related-content-sidebar mb-8 md:mb-14">
+  
+
+
+
+
+
+<div class="media-list mx-auto hidden lg:flex flex-col">
+      
+
+
+<div class="block-header flex justify-between items-baseline  pb-3 border-b border-gray-200 ">
+  <h2 class="block-header__title font-sans media-list__title text-base font-medium uppercase text-gray-800">
+    更多报导
+  </h2>
+  </div>
+    <div class="media-list__content">
+    <ul class="media-list__list flex flex-wrap flex-col">
+              <li class="media-list__item py-4 border-t border-gray-200 first:border-0">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full flex-row-reverse justify-end ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2023-02-13T00:00:00-0500">2023年 02月 13日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          快讯
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2023/02/13/hong-kong-court-rejects-compulsory-surgery-trans-men"><span>香港法院撤销对跨性别男性的强制手术要求</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none mr-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/media_2023/02/202302lgbt_china_hong_kong_transgender_activist_henry_edward_tse.jpg?h=8b7966f8&amp;itok=tQWiIYDb" alt="Transgender activist Henry Edward Tse speaks to reporters outside of Court of Final Appeal in Hong Kong." loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2023/02/13/hong-kong-court-rejects-compulsory-surgery-trans-men" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+              <li class="media-list__item py-4 border-t border-gray-200 first:border-0">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full flex-row-reverse justify-end ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2022-08-22T00:00:00-0400">2022年 08月 22日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          快讯
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2022/08/22/singapore-decriminalize-gay-sex"><span>新加坡将除罪同性性行为</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none mr-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/media_2022/08/202208asia_lgbt_singapore_pinkdot.jpg?h=4c4adfbd&amp;itok=gw3MzAkS" alt="Demonstrators hold pro-LGBT signs at a rally" loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2022/08/22/singapore-decriminalize-gay-sex" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+          </ul>
+  </div>
+</div>
+</div>
+
+  </div>
+<div class="views-element-container">
+  
+      
+
+
+<div class="block-header flex justify-between items-baseline  pb-3 border-b border-gray-200 ">
+  <h2 class="block-header__title font-sans most-viewed__title text-base font-medium uppercase text-gray-800">
+    最多人浏览
+  </h2>
+  </div>
+    
+      
+<div class="form-group mx-sm-3"><div class="js-view-dom-id-b1585beb2496322b28d8524c8cfe5547db9ed514b268056951f3d794b5d93bed">
+  
+  
+  
+
+  
+  
+  
+
+  
+
+
+<div class="most-viewed">
+  <div class="most-viewed__list-container">
+    <ol class="most-viewed__list list-decimal font-sans text-gray-600">
+              <li class="most-viewed__list-item flex mt-4 font-medium w-full leading-tight">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full justify-between ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2023-10-18T00:00:00-0400">2023年 10月 18日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          新闻稿
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2023/10/18/israel/palestine-videos-hamas-led-attacks-verified"><span>以色列／巴勒斯坦：哈马斯领导攻击影片查核属实</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none ml-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/media_2023/10/202310mena_Israel_Palestine_dashcam_stills.jpg?h=c673cd1c&amp;itok=fHlgGpvx" alt="202310mena_Israel_Palestine_dashcam_stills" loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2023/10/18/israel/palestine-videos-hamas-led-attacks-verified" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+              <li class="most-viewed__list-item flex mt-4 font-medium w-full leading-tight">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full justify-between ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2023-10-12T00:00:00-0400">2023年 10月 12日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          新闻稿
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2023/10/12/israel-white-phosphorus-used-gaza-lebanon"><span>以色列：白磷弹被用于加沙、黎巴嫩</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none ml-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/media_2023/10/202310mena_palestine_white_phosphorous_artillery_gaza.jpg?h=8aa5fa2d&amp;itok=Sy9D5Bpc" alt="Airbursts of artillery-fired white phosphorus fall over the Gaza city port, October 11, 2023. " loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2023/10/12/israel-white-phosphorus-used-gaza-lebanon" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+              <li class="most-viewed__list-item flex mt-4 font-medium w-full leading-tight">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full justify-between ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2023-11-21T18:00:00-0500">2023年 11月 21日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          报告
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2023/11/22/china-mosques-shuttered-razed-altered-muslim-areas"><span>中国：穆斯林聚居区清真寺被关闭、拆毁、改造</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none ml-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/media_2023/11/202311asia_china_huangniwan_village_poverty_workshop.jpeg?h=ee41355b&amp;itok=a2tL3FN4" alt="A WeChat post by the state television station in Linxia shows how a mosque was closed and turned into a cloth shoe poverty alleviation workshop in Huangniwan Village in August 2018, Linxia Hui Autonomous Prefecture, Gansu Province, China, May 14, 2020." loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2023/11/22/china-mosques-shuttered-razed-altered-muslim-areas" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+              <li class="most-viewed__list-item flex mt-4 font-medium w-full leading-tight">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full justify-between ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2018-11-12T23:00:00-0500">2018年 11月 12日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          新闻稿
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2018/11/12/323980"><span>巴基斯坦：女童被剥夺教育机会</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none ml-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/multimedia_images_2018/201811wrd_pakistan_girlseducation.jpg?itok=5GF0mQuc" alt="201811wrd_pakistan_girlseducation" loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2018/11/12/323980" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+              <li class="most-viewed__list-item flex mt-4 font-medium w-full leading-tight">
+  
+
+
+
+
+
+
+
+
+<article class="media-block flex w-full justify-between ">
+      <div class="media-block__content">
+    <div class="media-block__info text-sm text-gray-700">
+              <time class="media-block__date" datetime="2019-03-21T00:00:00-0400">2019年 03月 21日</time>
+                    <span class="media-block__tag separator-bar font-serif">
+          新闻稿
+        </span>
+          </div>
+    <h3 class="media-block__title text-gray-800 media-block__link-gray text-lg font-medium mt-1">
+              <a href="/zh-hans/news/2019/03/21/327886"><span>缅甸：妇女、少女被贩运到中国作‘新娘’</span>
+</a>
+          </h3>
+                              </div>
+        <div class="media-block__image relative flex-none ml-4  w-24">
+
+        <div class="media-block__image-wrapper relative">
+                                  
+      <img src="/sites/default/files/styles/square/public/multimedia_images_2019/201903wrd_myanmar_main.jpg?itok=eCsd_XT9" alt="A young woman who was trafficked at age 17 by a friend’s mother who promised her a well-paid child care job and then sold her to a family in China as a “bride.” Once purchased, she was confined and subjected to sexual slavery, but managed to escape after " loading="lazy"  class="w-24 unloaded"  width="374"  height="374" />
+                              </div>
+              <a href="/zh-hans/news/2019/03/21/327886" class="hrw-fill" aria-hidden="true" tabindex="-1"></a>
+            </div>
+  
+  </article>
+</li>
+          </ol>
+  </div>
+</div>
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+  </div>
+
+        </div>
+        </div>
+</div>
+  
+      
+    </div>
+
+    
+
+    <div class="hrw-share hrw-share--vertical hidden lg:block"><p class="minimal-share"><a href="https://www.facebook.com/sharer.php?u=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via Facebook" class="facebook ms-icon" data-ms="facebook">
+      <span class="sr-only">Share this via Facebook</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 571.4 1000" role="img" focusable="false" aria-hidden="true"><path d="M535.2 6.7V154h-87.7q-47.9 0-64.7 20.1t-16.7 60.3v105.4h163.5L507.8 505H366.1v423.6H195.3V505H53V339.8h142.3V218.2q0-103.8 58-161T407.9 0Q490 0 535.2 6.7z" /></svg>
+
+</a>
+<a href="https://twitter.com/intent/tweet?text=日本法院推翻跨性别者强制绝育规定&amp;url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via Twitter" class="twitter ms-icon" data-ms="twitter">
+      <span class="sr-only">Share this via Twitter</span>
+  <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.374-1.337.647-2.085.794-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.415-.02-.616-.058.418 1.304 1.63 2.253 3.067 2.28-1.123.88-2.54 1.404-4.076 1.404-.265 0-.526-.015-.783-.045 1.454.93 3.18 1.474 5.033 1.474 6.038 0 9.34-5 9.34-9.337 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z" fill-rule="nonzero" /></svg>
+</a>
+<a href="whatsapp://send?text=日本法院推翻跨性别者强制绝育规定%20-%20https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via WhatsApp" class="whatsapp ms-icon" data-ms="whatsapp">
+      <span class="sr-only">Share this via WhatsApp</span>
+  <svg viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" aria-hidden="true" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M11.665 9.588c-.2-.1-1.177-.578-1.36-.644-.182-.067-.315-.1-.448.1-.132.197-.514.643-.63.775-.116.13-.232.147-.43.05-.2-.1-.842-.31-1.602-.985-.592-.525-.99-1.174-1.107-1.373-.116-.198-.013-.305.087-.404.09-.09.2-.232.3-.348.098-.116.13-.198.198-.33.066-.133.033-.248-.017-.348-.05-.1-.448-1.074-.614-1.47-.16-.387-.325-.334-.448-.34-.115-.006-.248-.007-.38-.007-.134 0-.35.05-.532.247-.182.2-.696.678-.696 1.653s.713 1.917.812 2.05c.1.132 1.404 2.133 3.4 2.99.476.205.846.327 1.136.418.476.15.91.13 1.253.08.383-.058 1.178-.48 1.344-.943.168-.463.168-.86.118-.943-.05-.083-.182-.133-.382-.232M8.034 14.52H8.03c-1.187 0-2.353-.318-3.37-.918l-.24-.143-2.507.653.67-2.43-.16-.25c-.662-1.05-1.012-2.263-1.01-3.508 0-3.633 2.97-6.59 6.623-6.59 1.77.002 3.43.688 4.68 1.934 1.252 1.244 1.94 2.9 1.94 4.66-.003 3.634-2.973 6.59-6.623 6.59m5.636-12.2C12.163.83 10.163.003 8.03 0 3.642 0 .07 3.556.067 7.928c0 1.397.366 2.76 1.063 3.964L0 16l4.223-1.102c1.164.63 2.474.964 3.807.965h.004c4.39 0 7.964-3.557 7.966-7.93 0-2.117-.827-4.11-2.33-5.608" /></svg>
+
+</a>
+<a href="mailto:?subject=日本法院推翻跨性别者强制绝育规定&amp;body=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" title="Share this via Email" class="email ms-icon" data-ms="email">
+      <span class="sr-only">Share this via Email</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 33 32" role="img" focusable="false" aria-hidden="true"><path d="M.064 24.032V5.6q0-.032.096-.608l10.848 9.28-10.816 10.4q-.128-.448-.128-.64zm1.44-20.32q.224-.096.544-.096h29.216q.288 0 .576.096l-10.88 9.312-1.44 1.152-2.848 2.336-2.848-2.336-1.44-1.152zm.032 22.208l10.912-10.464 4.224 3.424 4.224-3.424L31.808 25.92q-.256.096-.544.096H2.048q-.256 0-.512-.096zm20.8-11.648l10.816-9.28q.096.288.096.608v18.432q0 .288-.096.64z" /></svg>
+
+</a>
+<a href="" title="Share this via Share" class="share ms-icon" data-ms="share">
+      <span class="sr-only">Other ways to share</span>
+  <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px" role="img" focusable="false" aria-hidden="true"><path d="M 23 3 A 4 4 0 0 0 19 7 A 4 4 0 0 0 19.09375 7.8359375 L 10.011719 12.376953 A 4 4 0 0 0 7 11 A 4 4 0 0 0 3 15 A 4 4 0 0 0 7 19 A 4 4 0 0 0 10.013672 17.625 L 19.089844 22.164062 A 4 4 0 0 0 19 23 A 4 4 0 0 0 23 27 A 4 4 0 0 0 27 23 A 4 4 0 0 0 23 19 A 4 4 0 0 0 19.986328 20.375 L 10.910156 15.835938 A 4 4 0 0 0 11 15 A 4 4 0 0 0 10.90625 14.166016 L 19.988281 9.625 A 4 4 0 0 0 23 11 A 4 4 0 0 0 27 7 A 4 4 0 0 0 23 3 z" /></svg>
+
+</a>
+<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization&amp;title=日本法院推翻跨性别者强制绝育规定" title="Share this via LinkedIn" class="linkedin ms-icon" data-ms="linkedin">
+      <span class="sr-only">Share this via LinkedIn</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 857.1 1000" role="img" focusable="false" aria-hidden="true"><path d="M194.8 348.8v553H10.6v-553h184.2zM206.5 178q.5 40.8-28.2 68.1t-75.6 27.3h-1.1q-45.8 0-73.7-27.3T0 178q0-41.3 28.7-68.3t75.1-27.1 74.2 27.1 28.5 68.3zm650.6 406.8v317H673.5V606q0-58.6-22.6-91.8T580.4 481q-35.2 0-58.9 19.3T486 548q-6.1 16.7-6.1 45.2v308.6H296.3q1.1-222.7 1.1-361.1t-.5-165.1l-.6-26.8h183.6v80.3h-1.1q11.2-17.8 22.9-31.2t31.5-29 48.6-24.3 63.8-8.7q95.5 0 153.5 63.4t58 185.5z" /></svg>
+
+</a>
+<a href="http://reddit.com/submit?url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization&amp;title=日本法院推翻跨性别者强制绝育规定" title="Share this via Reddit" class="reddit ms-icon" data-ms="reddit">
+      <span class="sr-only">Share this via Reddit</span>
+  <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30px" height="30px" role="img" focusable="false" aria-hidden="true"><path d="M 17.662109 2 C 15.565005 2 14 3.7131367 14 5.6621094 L 14 9.0351562 C 11.24971 9.1810926 8.7344872 9.9143634 6.7265625 11.064453 C 5.9527826 10.321405 4.9166871 9.991448 3.9121094 9.9921875 C 2.8229214 9.9929893 1.7094525 10.370413 0.94140625 11.234375 L 0.92382812 11.253906 L 0.90625 11.273438 C 0.16947928 12.194228 -0.12225605 13.427747 0.07421875 14.652344 C 0.25365009 15.770711 0.90137168 16.893419 2.0273438 17.628906 C 2.0199689 17.753058 2 17.874618 2 18 C 2 22.962 7.832 27 15 27 C 22.168 27 28 22.962 28 18 C 28 17.874618 27.980031 17.753058 27.972656 17.628906 C 29.098628 16.893419 29.74635 15.770711 29.925781 14.652344 C 30.122256 13.427747 29.830521 12.194228 29.09375 11.273438 L 29.076172 11.253906 L 29.058594 11.234375 C 28.290448 10.370294 27.177168 9.9929893 26.087891 9.9921875 C 25.08323 9.991448 24.046988 10.321133 23.273438 11.064453 C 21.265513 9.9143634 18.75029 9.1810926 16 9.0351562 L 16 5.6621094 C 16 4.6830821 16.565214 4 17.662109 4 C 18.182797 4 18.817104 4.2609042 19.810547 4.609375 C 20.650361 4.9039572 21.743308 5.2016984 23.140625 5.2910156 C 23.474875 6.2790874 24.402814 7 25.5 7 C 26.875 7 28 5.875 28 4.5 C 28 3.125 26.875 2 25.5 2 C 24.561213 2 23.747538 2.5304211 23.320312 3.3007812 C 22.125831 3.2346294 21.248238 2.9947078 20.472656 2.7226562 C 19.568849 2.4056271 18.738422 2 17.662109 2 z M 3.9121094 11.992188 C 4.3072494 11.991896 4.6826692 12.095595 4.9921875 12.263672 C 3.8881963 13.18517 3.0505713 14.261821 2.5449219 15.4375 C 2.2764358 15.106087 2.114647 14.734002 2.0507812 14.335938 C 1.9430146 13.664243 2.1440212 12.966045 2.4628906 12.552734 C 2.7642172 12.228395 3.3144613 11.992626 3.9121094 11.992188 z M 26.085938 11.992188 C 26.683756 11.992627 27.235874 12.22849 27.537109 12.552734 C 27.855979 12.966045 28.056985 13.664243 27.949219 14.335938 C 27.885353 14.734002 27.723564 15.106087 27.455078 15.4375 C 26.949429 14.261821 26.111804 13.18517 25.007812 12.263672 C 25.316626 12.095792 25.690955 11.991896 26.085938 11.992188 z M 10 14 C 11.105 14 12 14.895 12 16 C 12 17.105 11.105 18 10 18 C 8.895 18 8 17.105 8 16 C 8 14.895 8.895 14 10 14 z M 20 14 C 21.105 14 22 14.895 22 16 C 22 17.105 21.105 18 20 18 C 18.895 18 18 17.105 18 16 C 18 14.895 18.895 14 20 14 z M 20.238281 19.533203 C 19.599281 21.400203 17.556 23 15 23 C 12.444 23 10.400719 21.400969 9.7617188 19.667969 C 10.911719 20.600969 12.828 21.267578 15 21.267578 C 17.172 21.267578 19.088281 20.600203 20.238281 19.533203 z" /></svg>
+
+</a>
+<a href="https://telegram.me/share/url?url=https://www.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization&amp;text=日本法院推翻跨性别者强制绝育规定" title="Share this via Telegram" class="telegram ms-icon" data-ms="telegram">
+      <span class="sr-only">Share this via Telegram</span>
+  <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24px" height="24px" role="img" focusable="false" aria-hidden="true"><path d="M 19.976562 3.1210938 L 19.611328 3.2695312 C 19.611328 3.2695312 6.6375504 8.5740484 2.6132812 10.267578 L 2.0019531 10.525391 L 2.0019531 12.779297 L 6.9472656 14.755859 L 8.6796875 19.996094 L 10.251953 20.005859 L 12.955078 17.720703 L 16.355469 20.996094 L 18.808594 20.996094 L 21.964844 3.875 L 19.976562 3.1210938 z M 19.646484 5.4179688 L 17.146484 18.980469 L 13.044922 15.029297 L 10.224609 17.410156 L 11 14.375 L 17.28125 8 L 17.082031 7.7988281 C 17.082031 7.7988281 10.706702 11.473998 8.0019531 13.023438 L 4.5371094 11.638672 C 9.0770415 9.7455758 18.697943 5.8058761 19.646484 5.4179688 z" /></svg>
+
+</a>
+<a href="/zh-hans/node/386238/printable/print" title="Share this via Printer" class="printer ms-icon" data-ms="printer">
+      <span class="sr-only">Share this via Printer</span>
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 924 1000" role="img" focusable="false" aria-hidden="true"><path d="M0 900V567l116-129h85v64h-56l-80 89v245h795V591l-80-89h-56v-64h85l115 129v333H0zm201-319V251l151-151h372v481H201zm60-61h403V160H412v151H261v209z" /></svg>
+
+</a>
+</p>
+</div>
+  </div>
+</article>
+
+  </div>
+
+  </div>
+
+            <div>
+    
+<div id="block-donationfooterblock">
+  
+    
+
+                  
+</div>
+
+  </div>
+
+      </main>
+
+</div>
+              <div>
+    
+<footer class="footer bg-gray-900 text-gray-500 w-full pt-16 pb-32 px-6 xl:px-0" role="contentinfo">
+    <div class="footer__content flex max-w-sm mx-auto flex-wrap-reverse md:flex-no-wrap">
+    <div class="footer__main flex flex-col w-full">
+      <div class="footer__upper flex flex-col h-fit justify-between border-b border-gray-600 lg:flex-row">
+        <div class="footer__signup pb-4 border-b border-gray-600 lg:border-0">
+                                  <div class="signup-form" id="signup-form--footer-md-signup">
+      <label class="signup-form__header text-2xl font-sans text-white leading-snug" for="signup-email-address">获取全球人权最新消息（英文）</label>
+    <div class="signup-form__content pt-2">
+    <form id="footer-md-signup" action="/hrw-newsletter/subscribe" class="signup-form__form flex flex-wrap"
+          method="post">
+      <input type="email" autocomplete="email" class="signup-form__input bg-gray-800 px-2 py-1 text-sm text-white" name="supporter.emailAddress" id="signup-email-address" required  placeholder="填入电邮地址"  >
+
+            <div class="hidden">
+        <label class="absolute text-md text-white w-full"
+               for="supporterFirstName">Leave blank</label>
+        <input type="text" name="supporter.firstName" id="supporterFirstName" class="form-text" autocomplete="off">
+        <label class="absolute text-md text-white w-full"
+               for="supporterLastName">Leave blank</label>
+        <input type="text" name="supporter.lastName" id="supporterLastName" class="form-text" autocomplete="off">
+        <label class="absolute text-md text-white w-full"
+               for="supporterCountry">Leave blank</label>
+        <input type="text" name="supporter.country" id="supporterCountry" class="form-text" autocomplete="off">
+        <input type="hidden" name="hp" value="supporter.country">
+      </div>
+
+      
+
+
+
+
+    
+
+<button type="submit" value="注册" class="btn btn-primary btn-sm"  onclick="if (!this.form.reportValidity()) {return false;} this.form.submit(); this.disabled = true;">
+        <span class="btn-text ">注册</span>
+  </button>
+      <input name="supporter.questions.96991" type="hidden" value="Y">
+      <input checked="checked" name="supporter.questions.1748" type="hidden" value="Y">
+              <input type="hidden" name="subscribeTo" value="a2X3i0000001Nn4EAE">
+            <input type="hidden" name="subscribemd" value="1">
+      <input type="hidden" name="source" value="hrw_footer">
+      <input type="hidden" name="submitF" value="true">
+    </form>
+  </div>
+</div>
+            <div class="signup-form" id="signup-form--footer-alt-signup">
+      <label class="signup-form__header text-2xl font-sans text-white leading-snug" for="signup-email-address">获取每日全球人权消息（英文）</label>
+    <div class="signup-form__content pt-2">
+    <form id="footer-alt-signup" action="/hrw-newsletter/subscribe" class="signup-form__form flex flex-wrap"
+          method="post">
+      <input type="email" autocomplete="email" class="signup-form__input bg-gray-800 px-2 py-1 text-sm text-white" name="supporter.emailAddress" id="signup-email-address" required  placeholder="填入电邮地址"  >
+
+            <div class="hidden">
+        <label class="absolute text-md text-white w-full"
+               for="supporterFirstName">Leave blank</label>
+        <input type="text" name="supporter.firstName" id="supporterFirstName" class="form-text" autocomplete="off">
+        <label class="absolute text-md text-white w-full"
+               for="supporterLastName">Leave blank</label>
+        <input type="text" name="supporter.lastName" id="supporterLastName" class="form-text" autocomplete="off">
+        <label class="absolute text-md text-white w-full"
+               for="supporterCountry">Leave blank</label>
+        <input type="text" name="supporter.country" id="supporterCountry" class="form-text" autocomplete="off">
+        <input type="hidden" name="hp" value="supporter.country">
+      </div>
+
+      
+
+
+
+
+    
+
+<button type="submit" value="注册" class="btn btn-primary btn-sm"  onclick="if (!this.form.reportValidity()) {return false;} this.form.submit(); this.disabled = true;">
+        <span class="btn-text ">注册</span>
+  </button>
+      <input name="supporter.questions.96991" type="hidden" value="Y">
+      <input checked="checked" name="supporter.questions.1748" type="hidden" value="Y">
+              <input type="hidden" name="subscribeTo" value="a2X3i0000001NmbEAE">
+            <input type="hidden" name="subscribemd" value="1">
+      <input type="hidden" name="source" value="hrw_footer">
+      <input type="hidden" name="submitF" value="true">
+    </form>
+  </div>
+</div>
+            <script>
+              const formIds = ['signup-form--footer-md-signup', 'signup-form--footer-alt-signup'];
+              let idToRemove = formIds[Math.floor(Math.random() * formIds.length)];
+                            if (window.location.href.indexOf('location_override') > 0) {
+                idToRemove = 'signup-form--footer-alt-signup';
+              }
+              document.getElementById(idToRemove).remove();
+            </script>
+                  </div>
+        <div class="footer__social pt-4 lg:pt-0">
+                      
+<div class="social-links flex flex-wrap justify-between py-1 lg:flex-col lg:items-end">
+    <h2 class="social-links__heading text-white text-2xl font-light font-sans">与我们联络</h2>
+    <div class="social-links__content">
+    <ul class="social-links__items flex">
+                                        <li class="social-link__item px-1">
+            
+
+
+
+
+
+
+
+<a href="https://twitter.com/hrw_chinese" class="text-white   text-3xl font-sans font-medium" title="Twitter">
+          <span class="sr-only">Twitter</span>
+      
+
+
+
+<div class="icon fill-current  w-6 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-twitter-nopad"></use>
+  </svg>
+</div>
+</a>
+          </li>
+                                 <li class="social-link__item px-1">
+            
+
+
+
+
+
+
+
+<a href="https://www.facebook.com/HRW.Chinese" class="text-white   text-3xl font-sans font-medium" title="Facebook">
+          <span class="sr-only">Facebook</span>
+      
+
+
+
+<div class="icon fill-current  w-6 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-facebook"></use>
+  </svg>
+</div>
+</a>
+          </li>
+                                 <li class="social-link__item px-1">
+            
+
+
+
+
+
+
+
+<a href="https://www.youtube.com/user/hrwchinese" class="text-white   text-3xl font-sans font-medium" title="YouTube">
+          <span class="sr-only">YouTube</span>
+      
+
+
+
+<div class="icon fill-current  w-6 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-youtube"></use>
+  </svg>
+</div>
+</a>
+          </li>
+                                 <li class="social-link__item px-1">
+            
+
+
+
+
+
+
+
+<a href="https://www.instagram.com/hrw_chinese" class="text-white   text-3xl font-sans font-medium" title="Instagram">
+          <span class="sr-only">Instagram</span>
+      
+
+
+
+<div class="icon fill-current  w-6 inline-block">
+  <svg viewBox="0 0 20 20" fill="currentColor"  role="img"  focusable="false"  aria-hidden="true"  >
+        <use xlink:href="/themes/custom/hrw_design/dist/app-drupal/assets/spritemap.svg?cacheBuster=#sprite-instagram"></use>
+  </svg>
+</div>
+</a>
+          </li>
+                                                               </ul>
+  </div>
+</div>
+                  </div>
+      </div>
+      <div class="footer__lower flex flex-col max-w-sm">
+        <div class="flex flex-col justify-between border-b border-gray-600 lg:flex-row">
+          <div class="footer__region-content">
+                          <nav role="navigation" class="inline-block" aria-labelledby="block-hrw-design-footer-menu" id="block-hrw-design-footer"><h2 class="visually-hidden" id="block-hrw-design-footer-menu">Footer menu</h2><div class="footer-nav"><ul class="nav-list py-2"><li class="nav-item inline-block my-2 px-2 leading-none border-r border-gray-500"><a href="/zh-hans/corrections" class="nav-lint text-sm text-white hover:underline focus:underline">修正</a></li><li class="nav-item inline-block my-2 px-2 leading-none border-r border-gray-500"><a href="/zh-hans/sitemap" class="nav-lint text-sm text-white hover:underline focus:underline">网站地图</a></li></ul></div></nav><div class="inline-block my-4" id="block-hrw-textonly-link">
+  
+    
+      <a href="//text.hrw.org/zh-hans/news/2023/10/16/japan-court-rules-against-mandatory-transgender-sterilization" class="inline-block text-sm text-white leading-none px-2 hover:underline focus:underline" hreflang="zh-hans">Text Version</a>
+  </div>
+                    </div>
+          <span class="copyright text-sm text-gray-500 py-4 border-t border-gray-600 my-auto lg:py-2 lg:border-0">© 2023 Human Rights Watch</span>
+        </div>
+
+        <div class="footer__info flex-col">
+          <div class="footer__info-address v-card font-sans text-gray-500 text-sm py-2 flex-row">
+            <strong>Human Rights Watch</strong> | 350 Fifth Avenue, 34th Floor | New York, <abbr>NY</abbr> 10118-3299 <abbr>USA</abbr> | <strong>t</strong> 1.212.290.4700
+          </div>
+          <div class="footer__info-reg py-2">
+            <p class="text-sm text-gray-500 font-sans"><strong>Human Rights Watch </strong> is a 501(C)(3) nonprofit registered in the US under EIN: 13-2875808</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__logo block w-24 text-white mx-auto mb-10 md:m-0 md:ml-auto md:pl-8 md:w-auto">
+      <a href="https://www.hrw.org/zh-hans">
+        <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 700 700" preserveAspectRatio="xMinYMin" class="max-w-full h-auto"><title>Human Rights Watch</title><path fill="#0071CE" d="M0 700h700V0H0z"/><path fill="#fff" d="M177 232v-56h-12v22h-16v-22h-11v56h11v-25h16v25zm94-18v-38h-12v41c0 4-3 6-8 6-4 0-7-1-8-4l-1-6v-37h-11v39c0 5 0 7 2 10 3 5 9 8 18 8 12 0 18-6 19-11l1-8zm110 18l-5-56h-14l-8 28-2 9-2-9-7-28h-15l-5 56h11l2-29 1-11 2 10 8 30h10l8-31 3-8v9l2 30h11zm94 0l-17-56h-12l-19 56h12l4-13h16l4 13h12zm-18-23h-11l3-10 2-11 3 10 3 11zm105 23v-56h-11l1 23 1 15-7-16-10-22h-13v56h11v-24l-1-16 8 18 9 22h12zM178 380l-13-22-2-3c7 0 12-7 12-15 0-10-6-17-16-17h-21v57h11v-24l2 1c2 1 3 3 9 13l5 10h13zm-15-40c0 3 0 5-2 6-1 1-3 2-8 2h-4v-15h10c3 1 4 4 4 7zm70 40v-57h-12v57zm88-5v-27h-22l2 10h8v12l-6 2c-4 0-7-1-9-3-3-3-4-8-4-16 0-9 1-15 5-18 2-2 4-3 8-3s8 1 11 4l6-7c-4-4-11-6-17-6s-10 1-14 4c-8 5-12 13-12 25 0 8 2 14 6 20 5 5 11 8 19 8 7 0 13-1 19-5zm85 5v-57h-11v22h-16v-22h-12v57h12v-25h16v25zm83-57h-41v10h14v47h12v-47h13zm78 39c0-8-5-14-14-17l-7-2c-5-1-6-2-6-5 0-4 3-7 8-7 4 0 8 1 13 5l5-9c-5-3-12-5-19-5-12 0-20 7-20 17l3 9c2 3 5 5 11 7l6 1c5 2 7 4 7 8 0 5-3 7-10 7-5 0-10-1-15-4l-4 9c5 3 13 5 19 5 14 0 23-8 23-19zM199 471h-12l-4 21-3 19-3-15-5-25h-12l-5 23-3 18-3-19-5-22h-12l14 57h12l5-23 3-16 2 16 5 23h13l13-57zm95 56l-17-56h-13l-18 56h12l4-13h16l4 13h12zm-19-22h-10a160 160 0 005-22 1386 1386 0 015 22zm103-34h-40v10h14v46h11v-46h13zm90 52l-5-7c-4 3-7 3-10 3-5 0-8-2-11-6-1-3-2-7-2-15 0-6 1-11 3-14s6-5 10-5l9 3 5-8c-3-2-9-4-15-4-9 0-17 5-21 13-3 5-4 10-4 17 0 9 2 15 7 20 5 6 11 8 18 8s11-1 16-5zm94 4v-56h-11v22h-16v-22h-12v56h12v-25h16v25z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+    <div id="hrw-design-cookie-container"></div>
+  </div>
+
+      
+
+  </div>
+
+    <script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"drupalLanguage":"zh-hans","drupalCountry":"","siteName":"Human Rights Watch","entityCreated":"1697428800","entityType":"node","entityBundle":"news","entityId":"386238","entityTitle":"日本法院推翻跨性别者强制绝育规定","division":{"value":"LGBT Rights","_attributes":[]},"entityTaxonomy":{"news_type":{"9430":"Dispatches"},"region_country":{"9452":"Asia","9552":"Japan"},"topic":{"9691":"LGBT Rights"}},"userUid":0});</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"zh-hans\/","currentPath":"node\/386238","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"zh-hans"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":-38},"hy":{"id":"hy","name":"Armenian","direction":"ltr","weight":-37},"sq":{"id":"sq","name":"Albanian","direction":"ltr","weight":-36},"am":{"id":"am","name":"Amharic","direction":"ltr","weight":-35},"ar":{"id":"ar","name":"Arabic","direction":"rtl","weight":-34},"ay":{"id":"ay","name":"Aymara","direction":"ltr","weight":-34},"az":{"id":"az","name":"Azerbaijani","direction":"ltr","weight":-33},"bn":{"id":"bn","name":"Bengali","direction":"ltr","weight":-32},"bs":{"id":"bs","name":"Bosnian","direction":"ltr","weight":-31},"sh":{"id":"sh","name":"Bosnian\/Croatian\/Serbian","direction":"ltr","weight":-30},"bg":{"id":"bg","name":"Bulgarian","direction":"ltr","weight":-29},"my":{"id":"my","name":"Burmese","direction":"ltr","weight":-28},"ca":{"id":"ca","name":"Catalan","direction":"ltr","weight":-27},"ceb":{"id":"ceb","name":"Cebuano","direction":"ltr","weight":-26},"zh-hans":{"id":"zh-hans","name":"Chinese, Simplified","direction":"ltr","weight":-25},"zh-hant":{"id":"zh-hant","name":"Chinese, Traditional","direction":"ltr","weight":-24},"hr":{"id":"hr","name":"Croatian","direction":"ltr","weight":-23},"cs":{"id":"cs","name":"Czech","direction":"ltr","weight":-22},"da":{"id":"da","name":"Danish","direction":"ltr","weight":-21},"gbz":{"id":"gbz","name":"Dari","direction":"rtl","weight":-20},"nl":{"id":"nl","name":"Dutch","direction":"ltr","weight":-19},"et":{"id":"et","name":"Estonian","direction":"ltr","weight":-18},"fi":{"id":"fi","name":"Finnish","direction":"ltr","weight":-17},"fr":{"id":"fr","name":"French","direction":"ltr","weight":-16},"ka":{"id":"ka","name":"Georgian","direction":"ltr","weight":-15},"de":{"id":"de","name":"German","direction":"ltr","weight":-14},"el":{"id":"el","name":"Greek","direction":"ltr","weight":-13},"ht":{"id":"ht","name":"Haitian Creole","direction":"ltr","weight":-12},"he":{"id":"he","name":"Hebrew","direction":"rtl","weight":-11},"hi":{"id":"hi","name":"Hindi","direction":"ltr","weight":-10},"hu":{"id":"hu","name":"Hungarian","direction":"ltr","weight":-9},"id":{"id":"id","name":"Indonesian","direction":"ltr","weight":-8},"it":{"id":"it","name":"Italian","direction":"ltr","weight":-7},"ja":{"id":"ja","name":"Japanese","direction":"ltr","weight":-6},"kk":{"id":"kk","name":"Kazakh","direction":"ltr","weight":-5},"km":{"id":"km","name":"Khmer","direction":"ltr","weight":-4},"rw":{"id":"rw","name":"Kinyarwanda","direction":"ltr","weight":-3},"ko":{"id":"ko","name":"Korean","direction":"ltr","weight":-2},"ku":{"id":"ku","name":"Kurdish","direction":"ltr","weight":-1},"lv":{"id":"lv","name":"Latvian","direction":"ltr","weight":0},"lt":{"id":"lt","name":"Lithuanian","direction":"ltr","weight":1},"mk":{"id":"mk","name":"Macedonian","direction":"ltr","weight":2},"ms":{"id":"ms","name":"Malay","direction":"ltr","weight":3},"mr":{"id":"mr","name":"Marathi","direction":"ltr","weight":4},"ne":{"id":"ne","name":"Nepali","direction":"ltr","weight":5},"nb":{"id":"nb","name":"Norwegian Bokm\u00e5l","direction":"ltr","weight":6},"nn":{"id":"nn","name":"Norwegian Nynorsk","direction":"ltr","weight":7},"om":{"id":"om","name":"Oromo","direction":"ltr","weight":8},"ps":{"id":"ps","name":"Pashto","direction":"rtl","weight":9},"fa":{"id":"fa","name":"Persian","direction":"rtl","weight":10},"pl":{"id":"pl","name":"Polish","direction":"ltr","weight":11},"pt":{"id":"pt","name":"Portuguese, International","direction":"ltr","weight":12},"qu":{"id":"qu","name":"Quechua","direction":"ltr","weight":13},"rom":{"id":"rom","name":"Romani","direction":"ltr","weight":14},"ro":{"id":"ro","name":"Romanian","direction":"ltr","weight":15},"ru":{"id":"ru","name":"Russian","direction":"ltr","weight":16},"sr":{"id":"sr","name":"Serbian","direction":"ltr","weight":17},"si":{"id":"si","name":"Sinhalese","direction":"ltr","weight":18},"sk":{"id":"sk","name":"Slovak","direction":"ltr","weight":19},"sl":{"id":"sl","name":"Slovenian","direction":"ltr","weight":20},"so":{"id":"so","name":"Somali","direction":"ltr","weight":21},"ku-so":{"id":"ku-so","name":"Sorani","direction":"rtl","weight":22},"es":{"id":"es","name":"Spanish","direction":"ltr","weight":23},"sw":{"id":"sw","name":"Swahili","direction":"ltr","weight":24},"sv":{"id":"sv","name":"Swedish","direction":"ltr","weight":25},"tl":{"id":"tl","name":"Tagalog","direction":"ltr","weight":26},"tg":{"id":"tg","name":"Tajik","direction":"ltr","weight":27},"ta":{"id":"ta","name":"Tamil","direction":"ltr","weight":28},"tet":{"id":"tet","name":"Tetum","direction":"ltr","weight":29},"th":{"id":"th","name":"Thai","direction":"ltr","weight":30},"vi":{"id":"vi","name":"Ti\u1ebfng Vi\u1ec7t","direction":"ltr","weight":31},"ti":{"id":"ti","name":"Tigrinya","direction":"ltr","weight":32},"tr":{"id":"tr","name":"Turkish","direction":"ltr","weight":33},"tk":{"id":"tk","name":"Turkmen","direction":"ltr","weight":34},"uk":{"id":"uk","name":"Ukrainian","direction":"ltr","weight":35},"ur":{"id":"ur","name":"Urdu","direction":"rtl","weight":36},"uz":{"id":"uz","name":"Uzbek","direction":"ltr","weight":37},"dv":{"id":"dv","name":"Dhivehi","direction":"rtl","weight":38}}},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":["hrw.org","www.hrw.org"]}},"statistics":{"data":{"nid":"386238"},"url":"\/core\/modules\/statistics\/statistics.php"},"minimalShare":{"sizes":{"printer":{"width":600,"height":600},"telegram":{"width":600,"height":500},"reddit":{"width":600,"height":500},"linkedin":{"width":520,"height":570},"share":{"width":600,"height":500},"twitter":{"width":600,"height":260},"facebook":{"width":600,"height":500}}},"hrwHeader":{"data":[{"id":"menu_link_content:2cddc307-64ce-4763-90a6-8129bf70afe4","text":"\u56fd\u5bb6","url":"","sub":{"type":"countries","data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9455","text":"\u4e2d\u4e1c\u548c\u5317\u975e","url":"\/zh-hans\/middle-east\/n-africa","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9650","text":"\u963f\u62c9\u4f2f\u8054\u5408\u914b\u957f\u56fd","url":"\/zh-hans\/middle-east\/n-africa\/united-arab-emirates"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9635","text":"\u57c3\u53ca","url":"\/zh-hans\/middle-east\/n-africa\/egypt"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9634","text":"\u5df4\u6797","url":"\/zh-hans\/middle-east\/n-africa\/bahrain"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9646","text":"\u5361\u5854\u5c14","url":"\/zh-hans\/middle-east\/n-africa\/qatar"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9641","text":"\u9ece\u5df4\u5ae9","url":"\/zh-hans\/middle-east\/n-africa\/lebanon"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9642","text":"\u5229\u6bd4\u4e9a","url":"\/zh-hans\/middle-east\/n-africa\/libya"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9647","text":"\u6c99\u7279\u963f\u62c9\u4f2f","url":"\/zh-hans\/middle-east\/n-africa\/saudi-arabia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9648","text":"\u53d9\u5229\u4e9a","url":"\/zh-hans\/middle-east\/n-africa\/syria"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9651","text":"\u4e5f\u95e8","url":"\/zh-hans\/middle-east\/n-africa\/yemen"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9637","text":"\u4f0a\u62c9\u514b","url":"\/zh-hans\/middle-east\/n-africa\/iraq"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9636","text":"\u4f0a\u6717","url":"\/zh-hans\/middle-east\/n-africa\/iran"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9638","text":"\u4ee5\u8272\u5217\uff0f\u5df4\u52d2\u65af\u5766","url":"\/zh-hans\/middle-east\/north-africa\/israel\/palestine"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9452","text":"\u4e9a\u6d32","url":"\/zh-hans\/asia","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9538","text":"\u963f\u5bcc\u6c57","url":"\/zh-hans\/asia\/afghanistan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9539","text":"\u6fb3\u5927\u5229\u4e9a","url":"\/zh-hans\/asia\/australia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9566","text":"\u5df4\u5e03\u4e9a\u65b0\u51e0\u5185\u4e9a","url":"\/zh-hans\/asia\/papua-new-guinea"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9564","text":"\u5df4\u57fa\u65af\u5766","url":"\/zh-hans\/asia\/pakistan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9563","text":"\u671d\u9c9c","url":"\/zh-hans\/asia\/north-korea"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9567","text":"\u83f2\u5f8b\u5bbe","url":"\/zh-hans\/asia\/philippines"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9571","text":"\u97e9\u56fd","url":"\/zh-hans\/asia\/south-korea"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9544","text":"\u67ec\u57d4\u5be8","url":"\/zh-hans\/asia\/cambodia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9554","text":"\u8001\u631d","url":"\/zh-hans\/asia\/laos"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9555","text":"\u9a6c\u6765\u897f\u4e9a","url":"\/zh-hans\/asia\/malaysia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9540","text":"\u5b5f\u52a0\u62c9","url":"\/zh-hans\/asia\/bangladesh"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9543","text":"\u7f05\u7538","url":"\/zh-hans\/asia\/myanmar-burma"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9560","text":"\u5c3c\u6cca\u5c14","url":"\/zh-hans\/asia\/nepal"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9552","text":"\u65e5\u672c","url":"\/zh-hans\/asia\/japan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9572","text":"\u65af\u91cc\u5170\u5361","url":"\/zh-hans\/asia\/sri-lanka"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9573","text":"\u53f0\u6e7e","url":"\/zh-hans\/asia\/taiwan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9574","text":"\u6cf0\u56fd","url":"\/zh-hans\/asia\/thailand"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9569","text":"\u65b0\u52a0\u5761","url":"\/zh-hans\/asia\/singapore"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9550","text":"\u5370\u5ea6","url":"\/zh-hans\/asia\/india"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9551","text":"\u5370\u5ea6\u5c3c\u897f\u4e9a","url":"\/zh-hans\/asia\/indonesia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9578","text":"\u8d8a\u5357","url":"\/zh-hans\/asia\/vietnam"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9545","text":"\u4e2d\u56fd\u548c\u897f\u85cf","url":"\/zh-hans\/asia\/china-and-tibet"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9453","text":"\u6b27\u6d32\u548c\u4e2d\u4e9a","url":"\/zh-hans\/europe\/central-asia","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9602","text":"\u7231\u5c14\u5170","url":"\/zh-hans\/europe\/central-asia\/ireland"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9584","text":"\u767d\u7f57\u65af","url":"\/zh-hans\/ouzhouhezhongya\/bailuosi"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9585","text":"\u6bd4\u5229\u65f6","url":"\/zh-hans\/europe\/central-asia\/belgium"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9597","text":"\u5fb7\u56fd","url":"\/zh-hans\/europe\/central-asia\/germany"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9619","text":"\u4fc4\u7f57\u65af","url":"\/zh-hans\/ouzhouhezhongya\/eluosi"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9595","text":"\u6cd5\u56fd","url":"\/zh-hans\/europe\/central-asia\/france"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9604","text":"\u54c8\u8428\u514b\u65af\u5766","url":"\/zh-hans\/europe\/central-asia\/kazakhstan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9614","text":"\u8377\u5170","url":"\/zh-hans\/europe\/central-asia\/netherlands"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9605","text":"\u5409\u5c14\u5409\u65af\u65af\u5766","url":"\/zh-hans\/europe\/central-asia\/kyrgyzstan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9618","text":"\u7f57\u9a6c\u5c3c\u4e9a","url":"\/zh-hans\/europe\/central-asia\/romania"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9593","text":"\u6b27\u6d32\u8054\u76df","url":"\/zh-hans\/europe\/central-asia\/european-union"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9625","text":"\u745e\u5178","url":"\/zh-hans\/europe\/central-asia\/sweden"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9621","text":"\u585e\u5c14\u7ef4\u4e9a\uff0f\u79d1\u7d22\u6c83","url":"\/zh-hans\/europe\/central-asia\/serbia\/kosovo"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9628","text":"\u571f\u8033\u5176","url":"\/zh-hans\/europe\/central-asia\/turkey"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9630","text":"\u4e4c\u514b\u5170","url":"\/zh-hans\/ouzhouhezhongya\/wukelan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9632","text":"\u4e4c\u5179\u522b\u514b\u65af\u5766","url":"\/zh-hans\/europe\/central-asia\/Uzbekistan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9598","text":"\u5e0c\u814a","url":"\/zh-hans\/europe\/central-asia\/greece"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9600","text":"\u5308\u7259\u5229","url":"\/zh-hans\/europe\/central-asia\/hungary"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9581","text":"\u4e9a\u7f8e\u5c3c\u4e9a","url":"\/zh-hans\/ouzhouhezhongya\/yameiniya"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9603","text":"\u610f\u5927\u5229","url":"\/zh-hans\/europe\/central-asia\/italy"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9631","text":"\u82f1\u56fd","url":"\/zh-hans\/europe\/central-asia\/united-kingdom"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9456","text":"\u7f8e\u56fd","url":"\/zh-hans\/meiguo","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9855","text":"\u7f8e\u56fd\u8d2b\u56f0\u4e0e\u7ecf\u6d4e\u4e0d\u5e73\u7b49","url":"\/zh-hans\/united-states\/poverty-and-economic-inequality"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9785","text":"\u5211\u4e8b\u53f8\u6cd5","url":"\/zh-hans\/united-states\/criminal-justice"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9659","text":"\u79fb\u6c11","url":"\/zh-hans\/united-states\/immigration"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9856","text":"\u79cd\u65cf\u6b67\u89c6","url":"\/zh-hans\/united-states\/racial-discrimination"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9451","text":"\u7f8e\u6d32","url":"\/zh-hans\/meizhou","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9513","text":"\u54e5\u4f26\u6bd4\u4e9a","url":"\/zh-hans\/americas\/colombia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9515","text":"\u53e4\u5df4","url":"\/zh-hans\/americas\/cuba"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9524","text":"\u6d2a\u90fd\u62c9\u65af","url":"\/zh-hans\/americas\/honduras"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9511","text":"\u52a0\u62ff\u5927","url":"\/zh-hans\/americas\/canada"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9526","text":"\u58a8\u897f\u54e5","url":"\/zh-hans\/americas\/mexico"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9537","text":"\u59d4\u5185\u745e\u62c9","url":"\/zh-hans\/americas\/venezuela"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9450","text":"\u975e\u6d32","url":"\/zh-hans\/africa","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9473","text":"\u57c3\u585e\u4fc4\u6bd4\u4e9a","url":"\/zh-hans\/africa\/ethiopia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9457","text":"\u5b89\u54e5\u62c9","url":"\/zh-hans\/africa\/angola"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9460","text":"\u5e03\u57fa\u7eb3\u6cd5\u7d22","url":"\/zh-hans\/africa\/burkina-faso"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9461","text":"\u5e03\u9686\u8fea","url":"\/zh-hans\/africa\/burundi"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9471","text":"\u8d64\u9053\u51e0\u5185\u4e9a","url":"\/zh-hans\/africa\/equatorial-guinea"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9472","text":"\u5384\u7acb\u7279\u91cc\u4e9a","url":"\/zh-hans\/africa\/eritrea"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9469","text":"\u521a\u679c\u6c11\u4e3b\u5171\u548c\u56fd","url":"\/zh-hans\/africa\/democratic-republic-congo"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9477","text":"\u51e0\u5185\u4e9a","url":"\/zh-hans\/africa\/guinea"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9503","text":"\u6d25\u5df4\u5e03\u97e6","url":"\/zh-hans\/africa\/zimbabwe"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9462","text":"\u5580\u9ea6\u9686","url":"\/zh-hans\/africa\/cameroon"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9468","text":"\u79d1\u7279\u8fea\u74e6","url":"\/zh-hans\/africa\/cote-divoire"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9479","text":"\u80af\u5c3c\u4e9a","url":"\/zh-hans\/africa\/kenya"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9481","text":"\u5229\u6bd4\u91cc\u4e9a","url":"\/zh-hans\/africa\/liberia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9490","text":"\u5362\u65fa\u8fbe","url":"\/zh-hans\/africa\/rwanda"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9486","text":"\u83ab\u6851\u6bd4\u514b","url":"\/zh-hans\/africa\/mozambique"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9495","text":"\u5357\u975e","url":"\/zh-hans\/africa\/south-africa"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9496","text":"\u5357\u82cf\u4e39","url":"\/zh-hans\/africa\/south-sudan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9488","text":"\u5c3c\u65e5\u5c14","url":"\/zh-hans\/africa\/niger"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9489","text":"\u5c3c\u65e5\u5229\u4e9a","url":"\/zh-hans\/africa\/nigeria"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9493","text":"\u585e\u62c9\u5229\u6602","url":"\/zh-hans\/africa\/sierra-leone"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9491","text":"\u585e\u5185\u52a0\u5c14","url":"\/zh-hans\/africa\/senegal"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9497","text":"\u82cf\u4e39","url":"\/zh-hans\/africa\/sudan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9494","text":"\u7d22\u9a6c\u91cc","url":"\/zh-hans\/africa\/somalia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9499","text":"\u5766\u6851\u5c3c\u4e9a","url":"\/zh-hans\/africa\/tanzania-and-zanzibar"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9501","text":"\u4e4c\u5e72\u8fbe","url":"\/zh-hans\/africa\/uganda"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9502","text":"\u8d5e\u6bd4\u4e9a","url":"\/zh-hans\/africa\/zambia"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9465","text":"\u4e4d\u5f97","url":"\/zh-hans\/africa\/chad"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.region.9464","text":"\u4e2d\u975e\u5171\u548c\u56fd","url":"\/zh-hans\/africa\/central-african-republic"}]}}]}},{"id":"menu_link_content:73c3de2d-949e-4270-b46c-a51cba0071a9","text":"\u4e3b\u9898","url":"","sub":{"type":"list","data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9681","text":"\u6b66\u5668","url":"\/zh-hans\/topic\/Arms","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9703","text":"\u96c6\u675f\u5f39\u836f","url":"\/zh-hans\/topic\/arms\/cluster-munitions"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9705","text":"\u6740\u624b\u673a\u5668\u4eba","url":"\/zh-hans\/topic\/wuqi\/shashoujiqiren"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9706","text":"\u5730\u96f7","url":"\/zh-hans\/topic\/wuqi\/delei"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9704","text":"\u71c3\u70e7\u6b66\u5668","url":"\/zh-hans\/topic\/arms\/incendiary-weapons"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9683","text":"\u513f\u7ae5\u6743\u5229","url":"\/zh-hans\/topic\/childrens-rights","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9713","text":"\u6559\u80b2","url":"\/zh-hans\/topic\/childrens-rights\/education"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9714","text":"\u6559\u80b2\u548c\u51b2\u7a81","url":"\/zh-hans\/topic\/ertongquanli\/jiaoyuhechongtu"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9712","text":"\u513f\u7ae5\u5175","url":"\/zh-hans\/topic\/ertongquanli\/ertongbing"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9711","text":"\u7ae5\u5de5","url":"\/zh-hans\/topic\/ertongquanli\/tonggong"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9715","text":"\u5c11\u5e74\u53f8\u6cd5","url":"\/zh-hans\/topic\/ertongquanli\/shaoniansifa"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9717","text":"\u96be\u6c11\u548c\u79fb\u6c11","url":"\/zh-hans\/topic\/ertongquanli\/nanminheyimin"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9870","text":"\u53cc\u6027\u513f\u7ae5","url":"\/zh-hans\/topic\/childrens-rights\/intersex-children"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9716","text":"\u88ab\u8feb\u4e0e\u5bb6\u5ead\u5206\u79bb\u7684\u513f\u7ae5","url":"\/zh-hans\/topic\/childrens-rights\/children-separated-from-families"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9861","text":"\u5371\u673a\u4e0e\u51b2\u7a81","url":"\/zh-hans\/topic\/crisis-and-conflict"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9682","text":"\u5546\u4e1a","url":"\/zh-hans\/topic\/business","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9898","text":"\u4f01\u4e1a\u95ee\u8d23","url":"\/zh-hans\/topic\/economic-justice-and-rights\/corporate-accountability"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9871","text":"\u8d2b\u7a77\u4e0e\u4e0d\u5e73\u7b49","url":"\/zh-hans\/topic\/economic-justice-and-rights\/poverty-and-inequality"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9708","text":"\u91c7\u6398\u4e1a","url":"\/zh-hans\/topic\/business\/caijueye"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9709","text":"\u4e16\u754c\u94f6\u884c\uff0c \u56fd\u9645\u8d27\u5e01\u57fa\u91d1\u7ec4\u7ec7","url":"\/zh-hans\/topic\/shangye\/shijieyinxing-guojihuobijijinzuzhi"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9685","text":"\u8eab\u5fc3\u969c\u788d\u8005\u6743\u5229","url":"\/zh-hans\/topic\/disability-rights"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9686","text":"\u73af\u5883","url":"\/zh-hans\/topic\/environment","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9876","text":"\u6c14\u5019\u53d8\u5316","url":"\/zh-hans\/topic\/climate-change"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9688","text":"\u8a00\u8bba\u81ea\u7531","url":"\/zh-hans\/topic\/free-speech","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9763","text":"\u65b0\u95fb\u81ea\u7531","url":"\/zh-hans\/topic\/free-speech\/press-freedom"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9764","text":"\u5b97\u6559\u81ea\u7531","url":"\/zh-hans\/topic\/free-speech\/religious-freedom"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9689","text":"\u5065\u5eb7","url":"\/zh-hans\/topic\/health","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9732","text":"\u6027\u5065\u5eb7\u548c\u751f\u6b96\u5065\u5eb7","url":"\/zh-hans\/topic\/jiankang\/xingjiankangheshengzhijiankang"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9726","text":"\u770b\u5b88\u6240","url":"\/zh-hans\/topic\/health\/detention-centers"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9727","text":"\u707e\u5bb3\u548c\u6d41\u79bb\u5931\u6240\u8005","url":"\/zh-hans\/topic\/health\/disasters-and-displaced-populations"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9728","text":"\u73af\u5883\u4e0e\u5065\u5eb7","url":"\/zh-hans\/topic\/health\/huanjingyujiankang"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9729","text":"\u4f7f\u7528\u4fdd\u5065","url":"\/zh-hans\/topic\/health\/health-care-access"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9730","text":"\u827e\u6ecb\u75c5\u6bd2\/ \u7ed3\u6838\u75c5","url":"\/zh-hans\/topic\/health\/aizibingdu\/jiehebing"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9731","text":"\u7f13\u548c\u533b\u7597","url":"\/zh-hans\/topic\/health\/huanheyiliao"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9808","text":"\u4fb5\u5bb3\u5065\u5eb7","url":"\/zh-hans\/topic\/health\/attacks-health"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9691","text":"LGBT\u6743\u5229","url":"\/zh-hans\/topic\/lgbt-rights"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9693","text":"\u96be\u6c11\u548c\u79fb\u6c11","url":"\/zh-hans\/topic\/refugees-and-migrants","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9741","text":"\u5bfb\u6c42\u5e87\u62a4\u8005 ","url":"\/zh-hans\/topic\/refugee-rights\/xun-qiu-bi-hu-zhe"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9742","text":"\u5883\u5185\u6d41\u79bb\u5931\u6240\u8005","url":"\/zh-hans\/topic\/refugee-rights\/jing-nei-liu-chi-shi-suo-zhe"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9740","text":"\u5265\u524a\uff0c\u5f3a\u8feb\u52b3\u52a8\u4e0e\u4eba\u53e3\u8d29\u5356","url":"\/zh-hans\/topic\/migration\/exploitation-forced-labor-trafficking"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9743","text":"\u79fb\u6c11","url":"\/zh-hans\/topic\/refugee-rights\/yi-min"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9690","text":"\u56fd\u9645\u53f8\u6cd5","url":"\/zh-hans\/topic\/international-justice","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9734","text":"\u67e5\u5c14\u65af\u00b7\u6cf0\u52d2","url":"\/zh-hans\/topic\/international-justice\/cha-er-si-tai-le"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9735","text":"\u56fd\u9645\u5211\u4e8b\u6cd5\u9662","url":"\/zh-hans\/topic\/international-justice\/guojixingshifayuan"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9736","text":"\u7ea6\u745f\u592b\u00b7\u79d1\u5c3c-\u5723\u4e3b\u62b5\u6297\u519b","url":"\/zh-hans\/topic\/international-justice\/yue-se-fu-ke-ni-sheng-zhu-di-kang-jun"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9737","text":"\u548c\u5e73\u4e0e\u6b63\u4e49","url":"\/zh-hans\/topic\/international-justice\/he-ping-yu-zheng-yi"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9733","text":"\u535a\u65af\u79d1\u30fb\u6069\u5854\u7518\u8fbe","url":"\/zh-hans\/topic\/international-justice\/bosikeentaganda"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9762","text":"\u79d1\u6280\u4e0e\u4eba\u6743","url":"\/zh-hans\/topic\/technology-and-rights"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9684","text":"\u6050\u6016\u4e3b\u4e49\uff0f\u53cd\u6050\u6016\u4e3b\u4e49","url":"\/zh-hans\/topic\/terrorism-counterterrorism","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9720","text":"\u4e2d\u60c5\u5c40\u6d3b\u52a8","url":"\/zh-hans\/topic\/terrorism\/counterterrorism\/zhongqingjuhuodong"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9721","text":"\u672a\u7ecf\u5ba1\u5224\u62d8\u7559","url":"\/zh-hans\/topic\/terrorism\/counterterrorism\/detention-without-trial"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9723","text":"\u5173\u5854\u90a3\u6469","url":"\/zh-hans\/topic\/terrorism\/counterterrorism\/guantanamo"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9724","text":"\u5173\u5854\u90a3\u6469 - \u519b\u4e8b\u59d4\u5458\u4f1a","url":"\/zh-hans\/topic\/terrorism\/counterterrorism\/guantanamo-military-commissions"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9725","text":"\u5b9a\u70b9\u6e05\u9664\u4e0e\u65e0\u4eba\u673a","url":"\/zh-hans\/topic\/terrorism\/counterterrorism\/targeted-killings-and-drones"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9696","text":"\u9177\u5211","url":"\/zh-hans\/topic\/torture"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9697","text":"\u8054\u5408\u56fd","url":"\/zh-hans\/topic\/united-nations","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9744","text":"\u4eba\u6743\u7406\u4e8b\u4f1a","url":"\/zh-hans\/topic\/united-nations\/renquanlishihui"}]}},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9698","text":"\u5987\u5973\u6743\u5229","url":"\/zh-hans\/topic\/womens-rights","sub":{"data":[{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9746","text":"\u7ae5\u5a5a","url":"\/zh-hans\/topic\/womens-rights\/child-marriage"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9747","text":"\u5bb6\u5ead\u66b4\u529b ","url":"\/zh-hans\/topic\/womens-rights\/jiatingbaoli"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9748","text":"\u5bb6\u52a1\u52b3\u5de5","url":"\/zh-hans\/topic\/womens-rights\/jiawulaogong"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9757","text":"\u6027\u5225\u5e73\u7b49","url":"\/zh-hans\/topic\/womens-rights\/gender-equality"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9752","text":"\u751f\u80b2\u6743\u5229\u548c\u4eba\u5de5\u6d41\u4ea7","url":"\/zh-hans\/topic\/womens-rights\/reproductive-rights-and-abortion"},{"id":"taxonomy_menu.menu_link:taxonomy_menu.menu_link.topic.9753","text":"\u6027\u66b4\u529b","url":"\/zh-hans\/topic\/womens-rights\/xingbaoli"}]}}]}},{"id":"menu_link_content:688f2c40-b121-4f88-9b77-ab9843172122","text":"\u62a5\u544a","url":"\/zh-hans\/publications"},{"id":"menu_link_content:bdabecec-539f-481a-bd96-8330a90e11f4","text":"\u5f55\u50cf\u0026\u76f8\u7247","url":"\/zh-hans\/video-photos"},{"id":"menu_link_content:44a0b2bc-0a01-41c2-ab89-1f9a122d54f7","text":"\u6210\u679c","url":"\/zh-hans\/node\/378413"},{"id":"menu_link_content:1e9465e3-d8ab-4c32-9a9d-931a2f8f2ee6","text":"\u5173\u4e8e","url":"","sub":{"type":"list","data":[{"id":"menu_link_content:4779f30c-10fe-4d29-9fdf-017d4b053fc5","text":"\u5173\u4e8e\u6211\u4eec","url":"\/zh-hans\/about\/about-us"}]}}],"buttons":[],"header_type":"internal","trending":[{"text":"\u8d8b\u52bf","data":[{"id":"a1d743d1-8f69-485a-a2ad-9d3dee38e620","text":"\u9999\u6e2f\u53cd\u4fee\u4f8b\u6297\u4e89","url":"\/zh-hans\/blog-feed\/hong-kong-protests","count":0,"post_dates":[]},{"id":"42c7cf42-0004-48bb-b61a-1636a977b46b","text":"\u65b0\u51a0\u75c5\u6bd2","url":"\/zh-hans\/tag\/coronavirus","count":0,"post_dates":[]},{"id":"57e3ba10-7259-4e26-87d8-22c6c87a28bb","text":"\u4e2d\u56fd\u5927\u89c4\u6a21\u76d1\u63a7","url":"\/zh-hans\/tag\/mass-surveillance-china","count":0,"post_dates":[]},{"id":"c3f75f87-5dbe-4b4d-a257-73dd99d79a92","text":"\u7f57\u5174\u4e9a\u5371\u673a","url":"\/zh-hans\/tag\/luoxingyaweiji","count":0,"post_dates":[]}]}]},"user":{"uid":0,"permissionsHash":"76d0a8cb16fbd0c649914442354392881459e01d00db35239e4ff2eee7e55ace"}}</script>
+<script src="/sites/default/files/js/js_V3WlZLSkyPz6fPO0iUd1DTb10W8RLRwC5--4ULFle7A.js?scope=footer&amp;delta=0&amp;language=zh-hans&amp;theme=hrw_design&amp;include=eJxVUFGywjAIvFA0R8rQZLU8E1IDrfb2L1Y71h-GXXZ3gERGmVY0P2CkhWtTN7ZHiFUUYv7QO13VUPxAik2ToHwV_3ef0daNuXA2NPUNOnUTLwhGQ4Ye9bG2X__8NJpqD31N9jg8LbPcfGrzRPn8gUffpYqFzBF9u1CIxamRsRpH3W1f5h1eJcIVFi6Ug47UqQ86bcgtjIf6rZ5LTXOGex_lI03GVVz_BNsaUAaknfwHkDuAtw"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-7de20fdcb72d0357be8","applicationID":"529481584","transactionName":"b1xaNxcHVhVXBxddX1YWexYWElcLGQENQFlMQBYNCgJdSFUFDVteUVpZD18IXRFF","queueTime":0,"applicationTime":604,"atts":"QxtZQV8dRRs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
