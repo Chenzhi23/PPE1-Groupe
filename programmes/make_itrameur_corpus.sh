@@ -2,7 +2,7 @@ dossier=$1 # le dossier d'une langue que nous allons traiter
 langnom=$2 # par exemple en, fr, ch, jp
 page_number=1
 
-echo "<lang=\""$langnom"\">" > "../itrameur/contextes-en.txt"
+echo "<lang=\""$langnom"\">" > "../itrameur/contextes-jp.txt"
 
 for page_number in {1..50};
 do
@@ -18,6 +18,6 @@ do
     else
         echo "Il n'y a pas ce fichier."
     fi
-done >> "../itrameur/contextes-en.txt"
+done >> "../itrameur/contextes-jp.txt"
 
-echo "</lang>" >> "../itrameur/contextes-en.txt"
+echo "</lang>" >> "../itrameur/contextes-jp.txt"
