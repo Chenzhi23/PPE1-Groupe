@@ -1,29 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
+# 定义要搜索的词汇
+search_word="transgenre"
 input_liens=$1
-search_word="跨性别"
-output_file="./../concordance/ch-${N}.html"
-
-echo "<!DOCTYPE html>
-<html lang=\"zh\">
-<head>
-    <!-- Metadata -->
-    <meta charset=\"UTF-8\"/>
-    <title>Tableaux- PPE1 Projet Groupe</title>
-    <!-- Bootstrap and custom CSS -->
-    <!-- ... -->
-</head>
-<body>
-<div class=\"container\">
-    <br/>
-    <table class=\"table table-striped-columns\">
-        <thead>
-          <tr>
-            <th scope=\"col\">Gauche</th>
-            <th scope=\"col\">Mot</th>
-            <th scope=\"col\">Droite</th>
-          </tr>
-        </thead>" > $output_file
 
 N=0
 
@@ -31,18 +10,8 @@ while read -r line
 do
     N=$( expr $N + 1 )
 
-    # 下载网页内容到临时文件
-    temp_file="./temp_${N}.html"
-    curl "$line" > "$temp_file"
-
     # 获取包含指定词汇的上下文
-    grep -o -P "([\p{Han}]{0,5}[^\p{Han}]*?)${search_word}([^\p{Han}]*?[\p{Han}]{0,5})" "$temp_file" | sed "s/\(${search_word}\)/<td>\1<\/td>/g" >> $output_file
+    # 这里我们使用了 -o 和 -P 选项，并且调整了正则表达式来匹配前后5-6个词语
+    grep -o -P "(\w+\W){0,5}${search_word}(\W\w+){0,5}" "./../contextes/fr/fr-${N}.txt" > "./../concordance/fr-${N}.txt"
 
-    # 删除临时文件
-    rm "$temp_file"
 done < $input_liens
-
-echo "      </table>
-        </div>
-</body>
-</html>" >> $output_file
