@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 counter=1
-urlfile=../urls/anglais.txt
+urlfile=../urls/en.txt
 
 
 echo "<html>
@@ -16,7 +16,10 @@ echo "<html>
 while read -r line;
 do
 	if [ -n "$line" ];
-	then
+	then		if [ ! $charset == "UTF-8" ];
+			then
+				iconv -f "$charset" -t "UTF-8"
+			fi
 		echo "en traitement de l'url numéro $counter"
 		lang=$(basename $urlfile .txt)
 		code=$(curl -I -L -s -w "%{http_code}" -o /dev/null $line)
@@ -24,18 +27,22 @@ do
 		
 		if [ $code == "200" ];
 		then
+			if [ ! $charset == "UTF-8" ];
+			then
+				iconv -f "$charset" -t "UTF-8" -o "../aspirations/en/en-$counter.html"
+			fi
 			# aspirations
-			curl -L $line > ../aspirations/en/fich-$lang-$counter.html
+			curl -L $line > ../aspirations/en/$lang-$counter.html
 			# dump text
-			lynx --dump --nolist $line > ../dumps-text/en/fich-$lang-$counter.txt
+			lynx -assume_charset UTF-8 --dump --nolist $line > ../dumps-text/en/$lang-$counter.txt
 			# occurence de mot étudié
-			occurence=$(grep -i -o "transgender" ../dumps-text/en/fich-$lang-$counter.txt| wc -l)
+			occurence=$(grep -i -o "transgender" ../dumps-text/en/$lang-$counter.txt| wc -l)
 			# récupérer les contextes
-			grep -i -B 1 -A 1 "transgender" ../dumps-text/en/fich-$lang-$counter.txt > ../contextes/en/fich-$lang-$counter.txt
+			grep -i -B 1 -A 1 "transgender" ../dumps-text/en/$lang-$counter.txt > ../contextes/en/$lang-$counter.txt
 			# concordances
 			# grep -i -o -P "(\w+\s){0,5}transgender(\s\w+){0,5}" fich-anglais-3.txt | sed 's/\btransgender\b/\t&\t/g'
 			# remplie le tableau
-			echo -e "\t\t\t<tr><td>$counter</td><td>$line</td><td>$code</td><td>$charset</td><td>$occurence</td><td><a href="../aspirations/en/fich-$lang-$counter.html">aspiration-$lang-$counter</a></td><td><a href="../dumps-text/en/fich-$lang-$counter.txt">dump-$lang-$counter</a></td><td><a href="../contextes/en/fich-$lang-$counter.txt">contexte-$lang-$counter</a></td></tr>" >> ../tableaux/tableau-en.html
+			echo -e "\t\t\t<tr><td>$counter</td><td>$line</td><td>$code</td><td>$charset</td><td>$occurence</td><td><a href="../aspirations/en/$lang-$counter.html">aspiration-$lang-$counter</a></td><td><a href="../dumps-text/en/$lang-$counter.txt">dump-$lang-$counter</a></td><td><a href="../contextes/en/$lang-$counter.txt">contexte-$lang-$counter</a></td></tr>" >> ../tableaux/tableau-en.html
 			counter=$(expr $counter + 1)
 		fi
 	fi

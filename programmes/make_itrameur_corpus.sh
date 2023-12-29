@@ -1,23 +1,21 @@
-dossier=$1 # le dossier d'une langue que nous allons traiter
-langnom=$2 # par exemple en, fr, ch, jp
-page_number=1
+FOLDER=$1 # le dossier d'une langue que nous allons traiter
+lang=$2 # par exemple en, fr, ch, jp
 
-echo "<lang=\""$langnom"\">" > "../itrameur/contextes-en.txt"
+echo "<lang=\""$lang"\">" > "./itrameur/$FOLDER-en.txt"
 
-for page_number in {1..50};
+for filename in $(ls "$FOLDER/$lang");
 do
-    fichier=$dossier/fich-anglais-$page_number.txt
-    if [ -f $fichier ];
-    then
-        echo "<page=\"$langnom-$page_number\">"
-        echo "<text>"
-        cat $fichier | sed -e 's/&/\&amp/g' -e 's/</\&lt/g' -e 's/>/\&gt/g' | tr -d "§" # remplacer les symboles < > &
-        echo "</text>"
-        echo "</page> §"
-        page_number=$(expr $page_number + 1)
-    else
-        echo "Il n'y a pas ce fichier."
-    fi
-done >> "../itrameur/contextes-en.txt"
 
-echo "</lang>" >> "../itrameur/contextes-en.txt"
+    page=$(basename $filename .txt)
+    content=$(cat $FOLDER/$lang/$filename)
+    cleaned=$(echo $content | sed -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g' | tr -d "§") # remplacer les symboles < > &
+    echo "<page="$page">"
+    echo "<text>"
+    echo $cleaned
+    echo "</text>"
+    echo "</page> §"
+    page_number=$(expr $page_number + 1)
+
+done >> "./itrameur/$FOLDER-en.txt"
+
+echo "</lang>" >> "./itrameur/$FOLDER-en.txt"
