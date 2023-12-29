@@ -61,7 +61,8 @@ do
     charset=$(curl -s -I -L $line | grep -i 'Content-Type' | ggrep -oP 'charset=\K([-A-Za-z0-9]+)')
 
     ###################################################################我的mac`grep -P`行不通的，至于为什么此处结果正确，因为删掉`-P`也可以
-    compte=$(cat ./../dumps-text/$lang/$lang-$ligne.txt | ggrep -o -P "$cible" | wc -l)
+    #compte=$(cat ./../dumps-text/$lang/$lang-$ligne.txt | ggrep -o -P "$cible" | wc -l)
+    compte=$(lynx --nolist --dump $line | ggrep -o -P "$cible" | wc -l)
     echo "<tr>
     <td>$ligne</td><td>$line</td><td>$code</td><td>$charset</td><td>$compte</td><td><a href="./../contextes/$lang/$lang-$ligne.txt">Contexte$ligne</a></td><td><a href="./../aspirations/$lang/$lang-$ligne.html">Aspiration$ligne</a></td><td><a href="./../dumps-text/$lang/$lang-$ligne.txt">Dump$ligne</a></td>
     </tr>" >> $chemin
