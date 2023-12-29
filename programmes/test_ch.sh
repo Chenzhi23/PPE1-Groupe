@@ -15,7 +15,7 @@ echo "<html>
  <head><title>Tableau</title><meta charset='UTF-8' /></head>
  <body>
  <table border='1'>
- <tr><th>N°</th><th>URL</th><th>Code HTTP</th><th>encoding</th><th>Aspirations</th><th>Dump text</th><th>compte</th><th>contextes</th></tr>" > tableau-ch.html
+ <tr><th>N°</th><th>URL</th><th>Code HTTP</th><th>Encoding</th><th>Aspirations</th><th>Dump text</th><th>Compte</th><th>Contextes</th></tr>" > tableau-ch.html
 
 N=1
 
