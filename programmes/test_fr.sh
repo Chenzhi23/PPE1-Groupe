@@ -64,7 +64,7 @@ do
     #compte=$(cat ./../dumps-text/$lang/$lang-$ligne.txt | ggrep -o -P "$cible" | wc -l)
     compte=$(lynx --nolist --dump $line | ggrep -o -P "$cible" | wc -l)
     echo "<tr>
-    <td>$ligne</td><td>$line</td><td>$code</td><td>$charset</td><td><a href="./../aspirations/$lang/$lang-$ligne.html">Aspiration$ligne</a></td><td><a href="./../dumps-text/$lang/$lang-$ligne.txt">Dump$ligne</a></td><td>$compte</td><td><a href="./../contextes/$lang/$lang-$ligne.txt">Contexte$ligne</a></td><td><a href="./../concordance/$lang/$lang-$ligne.html">Cooncordance$ligne</a></td>
+    <td>$ligne</td><td>$line</td><td>$code</td><td>$charset</td><td><a href="./../aspirations/$lang/$lang-$ligne.html">Aspiration$ligne</a></td><td><a href="./../dumps-text/$lang/$lang-$ligne.txt">Dump$ligne</a></td><td>$compte</td><td><a href="./../contextes/$lang/$lang-$ligne.txt">Contexte$ligne</a></td><td><a href="./../concordance/$lang/$lang-$ligne.html">Concordance$ligne</a></td>
     </tr>" >> $chemin
 
 done < $fichier_urls
