@@ -47,7 +47,7 @@ echo "<html>
 echo "</head>
 <body>
 <table border='1'>
-<tr><th>Ligne</th><th>URL</th><th>Code HTTP</th><th>Encodage</th><th>Compte</th><th>Contexte</th><th>Aspirations</th><th>Dump</th></tr>" >> $chemin
+<tr><th>Ligne</th><th>URL</th><th>Code HTTP</th><th>Encodage</th><th>Aspirations</th><th>Dump</th><th>Compte</th><th>Contexte</th><th>Concordance</th></tr>" >> $chemin
 
 fichier_urls=$1
 ligne=0
@@ -64,7 +64,7 @@ do
     #compte=$(cat ./../dumps-text/$lang/$lang-$ligne.txt | ggrep -o -P "$cible" | wc -l)
     compte=$(lynx --nolist --dump $line | ggrep -o -P "$cible" | wc -l)
     echo "<tr>
-    <td>$ligne</td><td>$line</td><td>$code</td><td>$charset</td><td>$compte</td><td><a href="./../contextes/$lang/$lang-$ligne.txt">Contexte$ligne</a></td><td><a href="./../aspirations/$lang/$lang-$ligne.html">Aspiration$ligne</a></td><td><a href="./../dumps-text/$lang/$lang-$ligne.txt">Dump$ligne</a></td>
+    <td>$ligne</td><td>$line</td><td>$code</td><td>$charset</td><td><a href="./../aspirations/$lang/$lang-$ligne.html">Aspiration$ligne</a></td><td><a href="./../dumps-text/$lang/$lang-$ligne.txt">Dump$ligne</a></td><td>$compte</td><td><a href="./../contextes/$lang/$lang-$ligne.txt">Contexte$ligne</a></td><td><a href="./../concordance/$lang/$lang-$ligne.html">Cooncordance$ligne</a></td>
     </tr>" >> $chemin
 
 done < $fichier_urls
