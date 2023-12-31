@@ -6,7 +6,7 @@ Membres du groupe :
 
 - Chenzhi SUN, Paris3, chinois
 
-- Jinyu CONG, Paris3, chinois
+- Jingyu CONG, Paris3, chinois
 
 - Xinlei CHEN, Inalco, chinois
 
