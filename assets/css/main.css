@@ -3005,6 +3005,8 @@ input, select, textarea {
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+		max-height: 600px;
+		overflow-y: auto;
 	}
 
 	table {
