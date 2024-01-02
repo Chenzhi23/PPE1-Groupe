@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Transgender</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--标题转换效果-->
+		<style>
+			@keyframes fadeInOut {
+				0% { opacity: 0; }
+				50% { opacity: 1; }
+				100% { opacity: 0; }
+			}
+	
+			h1 {
+				animation: fadeInOut 6s infinite; /* 4s 是动画持续时间，infinite 表示无限循环 */
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+				<div id="intro">
+						
+					<p>PROGRAMMATION ET PROJET ENCADRÉ 1</p>
+					<h1 id="fadingTitle">TRANSGENRE</h1>
+					<p>RÉALISÉ PAR CONG JINYU, SUN CHENZHI, CHEN XINLEI, WEN YU-CHIEH</p>
+					<ul class="actions">
+						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+					</ul>
+				</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Transgenre</a>
+					</header>
+
+
+				<!-- Nav --> 
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html">Page d'accueil</a></li>
+						<li><a href="index.html#detail">Présentation</a></li>
+						<li><a href="tableaux.html">Tableaux</a></li>
+						<li><a href="#">Itrameur</a></li>
+						<li><a href="#">Nuages</a></li>
+						<li  class="active"><a href="script.html">Scripts</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://github.com/Chenzhi23/PPE1-Groupe" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</nav>
+
+
+			
+						
+				
+				<!-- Main -->
+<div id="main">
+
+    <!-- Post -->
+    <section class="post">
+        <header class="major">
+            <h2>SCRIPTS</h2>
+        </header>
+
+        <style>
+            .script-content {
+                display: none;
+                background-color: #f4f4f4;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+        </style>
+
+        <h2>Traitement des URLs</h2>
+        <button onclick="toggleScript('scriptContent1')">Voir le script</button>
+        <pre id="scriptContent1" class="script-content">
+            <code>
+#!/usr/bin/env zsh
+if [ $# -ne 1 ]
+then 
+echo "ce programme demande un argument"
+exit 1
+fi
+                                      
+lang=$(basename $1 .txt)
+chemin=./../tableaux/$lang.html
+if [ $lang = "fr" ]; 
+then
+cible="(T|t)ransgenres?"
+fi 
+if [ $lang = "en" ]; 
+then
+cible="transgender"
+fi
+
+if [ $lang = "ch" ]; then
+cible="跨性别"
+fi
+
+if [ $lang = "jp" ]; then
+cible="トランスジェンダー"
+fi
+
+echo "&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=\"UTF-8\"/&gt;" > $chemin
+
+echo "&lt;/head&gt;
+&lt;body&gt;
+&lt;table border='1'&gt;
+&lt;tr&gt;&lt;th&gt;Ligne&lt;/th&gt;&lt;th&gt;URL&lt;/th&gt;&lt;th&gt;Code HTTP&lt;/th&gt;&lt;th&gt;Encodage&lt;/th&gt;&lt;th&gt;Aspirations&lt;/th&gt;&lt;th&gt;Dump&lt;/th&gt;&lt;th&gt;Compte&lt;/th&gt;&lt;th&gt;Contexte&lt;/th&gt;&lt;th&gt;Concordance&lt;/th&gt;&lt;/tr&gt;" >> $chemin
+
+fichier_urls=$1
+ligne=0
+
+while read -r line
+do
+ligne=$( expr $ligne + 1 )
+code=$(curl -s -I -L -w "%{http_code}" -o /dev/null $line)
+charset=$(curl -s -I -L $line | grep -i 'Content-Type' | ggrep -oP 'charset=\K([-A-Za-z0-9]+)')
+
+compte=$(lynx --nolist --dump $line | ggrep -o -P "$cible" | wc -l)
+echo "&lt;tr&gt;
+&lt;td&gt;$ligne&lt;/td&gt;&lt;td&gt;$line&lt;/td&gt;&lt;td&gt;$code&lt;/td&gt;&lt;td&gt;$charset&lt;/td&gt;&lt;td&gt;&lt;a href=\"./../aspirations/$lang/$lang-$ligne.html\"&gt;Aspiration$ligne&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\"./../dumps-text/$lang/$lang-$ligne.txt\"&gt;Dump$ligne&lt;/a&gt;&lt;/td&gt;&lt;td&gt;$compte&lt;/td&gt;&lt;td&gt;&lt;a href=\"./../contextes/$lang/$lang-$ligne.txt\"&gt;Contexte$ligne&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\"./../concordance/$lang/$lang-$ligne.html\"&gt;Concordance$ligne&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;" >> $chemin
+
+done &lt; $fichier_urls
+
+echo "&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;" >> $chemin                                        
+                   
+                        
+            </code>
+        </pre>
+
+        <br><br>
+
+        <h2>Concordances</h2>
+        <button onclick="toggleScript('scriptContent2')">Voir le script</button>
+        <pre id="scriptContent2" class="script-content">
+            <code>
+#!/usr/bin/env zsh
+
+input_liens=$1
+lang=$(basename $1 .txt)
+
+# Define the target word based on language
+if [ $lang = "en" ]; then
+    cible="transgender"
+elif [ $lang = "fr" ]; then
+    cible="(T|t)ransgenres?"
+elif [ $lang = "ch" ]; then
+    cible="跨性别"
+elif [ $lang = "jp" ]; then
+    cible="トランスジェンダー"
+fi
+
+N=0
+
+while read -r line
+do
+    N=$( expr $N + 1 )
+    chemin=./../concordance/$lang/$lang-$N.html
+
+    # Start of HTML file
+    echo "&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=\"UTF-8\"&gt;
+        &lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\"&gt;
+        &lt;style&gt;
+            .table-container {
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .has-background-rose {
+                background-color: #FFE7FE;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div class=\"container\"&gt;
+        &lt;br/&gt;
+        &lt;table class=\"table table-striped-columns\"&gt;
+            &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope=\"col\"&gt;Gauche&lt;/th&gt;
+                &lt;th scope=\"col\"&gt;Mot&lt;/th&gt;
+                &lt;th scope=\"col\"&gt;Droite&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;" &gt; $chemin
+
+    # Apply different commands based on language
+    if [ $lang = "en" ]; then
+        # Use ggrep for English
+        ggrep -o -P "((\w+\W){0,5})(${cible})((\W\w+){0,5})" ./../contextes/en/en-$N.txt | sed -E "s/(.*)($cible)(.*)/&lt;tr&gt;&lt;td&gt;\1&lt;\/td&gt;&lt;td&gt;\2&lt;\/td&gt;&lt;td&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/"  &gt;&gt; $chemin
+    elif [ $lang = "fr" ]; then
+        # Use ggrep for French
+        ggrep -o -P "((\w+\W){0,5})(${cible})((\W\w+){0,5})" ./../contextes/fr/fr-$N.txt | sed -E "s/(.*)($cible)(.*)/&lt;tr&gt;&lt;td&gt;\1&lt;\/td&gt;&lt;td&gt;\2&lt;\/td&gt;&lt;td&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/"  &gt;&gt; $chemin
+    elif [ $lang = "ch" ]; then
+        # Use grep for Chinese
+        export LANG=zh_CN.UTF-8
+        ggrep -P -o "([\p{Han}]{0,5}[^\p{Han}]*?)(${cible})([^\p{Han}]*?[\p{Han}]{0,5})"  "./../contextes/ch/ch-$N.txt" | LANG=C sed -E -r "s/(.*)($cible)(.*)/&lt;tr&gt;&lt;td&gt;\1&lt;\/td&gt;&lt;td&gt;\2&lt;\/td&gt;&lt;td&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/" &gt;&gt; $chemin
+    elif [ $lang = "jp" ]; then
+        # Use grep for Japanese
+        export LANG=ja_JP.UTF-8
+        ggrep -P -o "([\p{Han}]{0,5}[^\p{Han}]*?)(${cible})([^\p{Han}]*?[\p{Han}]{0,5})"  "./../contextes/jp/jp-$N.txt" | LANG=C sed -E -r "s/(.*)($cible)(.*)/&lt;tr&gt;&lt;td&gt;\1&lt;\/td&gt;&lt;td&gt;\2&lt;\/td&gt;&lt;td&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/" &gt;&gt; $chemin
+    fi
+
+    # End of HTML file
+    echo "&lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;" &gt;&gt; $chemin
+
+done &lt; $input_liens
+
+            </code>
+        </pre>
+
+        <br><br>
+
+        <h2>Normalisation des textes pour iTrameur</h2>
+        <button onclick="toggleScript('scriptContent3')">Voir le script</button>
+        <pre id="scriptContent3" class="script-content">
+            <code>
+dossier=$1 # le dossier d'une langue que nous allons traiter
+langnom=$2 # par exemple en, fr, ch, jp
+page_number=1
+
+echo "&lt;lang=\""$langnom"\"&gt;" &gt; "../itrameur/contextes-jp.txt"
+
+for page_number in {1..50};
+do
+    fichier=$dossier/fich-anglais-$page_number.txt
+    if [ -f $fichier ];
+    then
+        echo "&lt;page=\"$langnom-$page_number\"&gt;"
+        echo "&lt;text&gt;"
+        cat $fichier | sed -e 's/&/\&amp/g' -e 's/&lt;/\&lt/g' -e 's/&gt;/\&gt/g' | tr -d "§" # remplacer les symboles &lt; &gt; &
+        echo "&lt;/text&gt;"
+        echo "&lt;/page&gt; §"
+        page_number=$(expr $page_number + 1)
+    else
+        echo "Il n'y a pas ce fichier."
+    fi
+done &gt;&gt; "../itrameur/contextes-jp.txt"
+
+echo "&lt;/lang&gt;" &gt;&gt; "../itrameur/contextes-jp.txt"
+
+            </code>
+        </pre>
+
+        <br><br>
+
+        <h2>Nuage du Mots</h2>
+        <button onclick="toggleScript('scriptContent4')">Voir le script</button>
+        <pre id="scriptContent4" class="script-content">
+            <code>
+pip install thulac
+import thulac
+thu1 = thulac.thulac(seg_only=True)  
+thu1.cut_f("fich15-ch.txt", "output.txt")  
+from wordcloud import WordCloud
+
+# File and font paths
+file_path = 'output.txt'
+font_path = 'NotoSansSC-Light.ttf'
+
+# Using with statement for safe file handling
+with open(file_path, 'r') as file:
+    text = file.read()
+
+# Creating a WordCloud object
+cloud = WordCloud(font_path=font_path,
+                  width=800,
+                  height=800,
+                  stopwords={"的","许玮枫","他","她"}).generate(text)  #Modifier selon les besoins.
+
+# Saving the word cloud to a file
+cloud.to_file('words.jpg')
+            </code>
+        </pre>
+
+
+    </section>
+
+</div>
+
+<script>
+    function toggleScript(id) {
+        var script = document.getElementById(id);
+        if (script.style.display === "none") {
+            script.style.display = "block";
+        } else {
+            script.style.display = "none";
+        }
+    }
+</script>
+
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul>
+						<li>&copy; Projet(PPE) M1 23/24 réalisé par Cong Jinyu, Sun Chenzhi, Chen Xinlei et Wen Yu-Chieh <a href="https://github.com/Chenzhi23/PPE1-Groupe" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li>Dirigés par <a href="http://www.tal.univ-paris3.fr/plurital/">@pluriTAL</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// 使用 JavaScript 控制标题的淡入淡出效果
+				const titles = ["TRANSGENRE", "TRANSGENDER", "跨性别", "トランスジェンダー"];
+				let titleIndex = 0;
+		
+				const fadingTitle = document.getElementById('fadingTitle');
+		
+				fadingTitle.addEventListener('animationiteration', () => {
+					// 当动画播放完成后，更改标题内容
+					fadingTitle.textContent = titles[titleIndex];
+					titleIndex = (titleIndex + 1) % titles.length;
+				});
+			</script>
+	</body>
+</html>

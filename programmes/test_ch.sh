@@ -15,7 +15,7 @@ echo "<html>
  <head><title>Tableau</title><meta charset='UTF-8' /></head>
  <body>
  <table border='1'>
- <tr><th>N°</th><th>URL</th><th>Code HTTP</th><th>Encoding</th><th>Aspirations</th><th>Dump text</th><th>Compte</th><th>Contextes</th><th>Concordance</th></tr>" > jp.html
+ <tr><th>N°</th><th>URL</th><th>Code HTTP</th><th>Encoding</th><th>Aspirations</th><th>Dump text</th><th>Compte</th><th>Contextes</th><th>Concordance</th></tr>" > ch.html
 
 N=1
 
@@ -40,12 +40,12 @@ do
         encoding="N/A"
     fi
 
-    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td><td><a href='./../aspirations/jp/jp-${N}.html'>Aspiration${N}</a></td><td><a href='./../dumps-text/jp/jp-${N}.txt'>Dump${N}</a></td><td>${count}</td><td><a href='./../contextes/jp/jp-${N}.txt'>Contexte${N}</a></td><td><a href="./../concordance/jp/jp-${N}.html">Concordance$N</a></td></tr>" >> jp.html
+    echo "<tr><td>${N}</td><td>${line}</td><td>${http_code}</td><td>${encoding}</td><td><a href='./../aspirations/ch/ch-${N}.html'>Aspiration${N}</a></td><td><a href='./../dumps-text/ch/ch-${N}.txt'>Dump${N}</a></td><td>${count}</td><td><a href='./../contextes/ch/ch-${N}.txt'>Contexte${N}</a></td><td><a href="./../concordance/ch/ch-${N}.html">Concordance$N</a></td></tr>" >> ch.html
 
     N=$(expr $N + 1)
 done < "$file"
 
-echo "</table></body></html>" >> jp.html
+echo "</table></body></html>" >> ch.html
 
 
 
